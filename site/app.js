@@ -58,6 +58,8 @@
     const short = Math.min(...["subq", "jev"].flatMap((s) => LENS.filter((l) => l <= 16000).map((l) => row(s, l).acc)));
     return {
       answers: num(data.meta.answers_graded, 0),
+      logs: data.meta.logs_per_length,
+      cellq: data.meta.logs_per_length * 2,
       short: pct(short),
       subq360: pct(row("subq", 360000).acc),
       jev360: pct(row("jev_chunked", 360000).acc),

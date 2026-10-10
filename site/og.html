@@ -21,7 +21,7 @@
 <div class="card">
   <div>
     <h1>SubQ Snap vs Jev</h1>
-    <p class="sub">Two decision models, one fictional store, 1,920 graded answers from 2K to 360K tokens of context.</p>
+    <p class="sub">Two decision models, one fictional store, <span id="n"></span> graded answers from 2K to 360K tokens of context.</p>
     <div class="totals" id="totals"></div>
   </div>
   <div id="chart"></div>
@@ -53,6 +53,7 @@ fetch("data/results.json").then((r) => r.json()).then((d) => {
   for (const r of jc.slice(1)) s += `<circle cx="${x(r.length)}" cy="${y(r.acc)}" r="5" fill="var(--paper)" stroke="var(--jev)" stroke-width="2"/>`;
   s += `<text class="lbl" style="font-size:14px;fill:var(--jev)" x="${m.l + 8}" y="${H - m.b - 10}">Jev's window · 32.7K</text></svg>`;
   document.getElementById("chart").innerHTML = s;
+  document.getElementById("n").textContent = d.meta.answers_graded.toLocaleString("en");
   document.body.dataset.ready = "1";
 });
 </script>

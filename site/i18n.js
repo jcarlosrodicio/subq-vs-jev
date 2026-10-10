@@ -20,7 +20,7 @@ window.I18N = {
     r_foot: "Jev accepts about 32.7K tokens per call, so on longer logs it reads 29K pieces and its answers are combined.",
 
     s1_title: "The haystack grows",
-    s1_p: "Each log is the event history of a fictional online store: orders, shipments, returns, refunds, closed accounts and support tickets. There are 10 logs at each of 8 sizes, from 2K to 360K tokens. Past 32.7K tokens Jev answers max_tokens_exceeded, so for the long logs it also gets the log cut into 29K pieces.",
+    s1_p: "Each log is the event history of a fictional online store: orders, shipments, returns, refunds, closed accounts and support tickets. There are {logs} logs at each of 8 sizes, from 2K to 360K tokens. Past 32.7K tokens Jev answers max_tokens_exceeded, so for the long logs it also gets the log cut into 29K pieces.",
     s1_tape: "Log size, to scale",
     s1_window: "Jev's window",
     s1_cut: "cuts for Jev",
@@ -35,7 +35,7 @@ window.I18N = {
     readout: "{len} tokens",
 
     s2_title: "Where each one breaks",
-    s2_p: "Six kinds of question, from finding one line to counting across the whole log. Each cell is the share of correct answers over 20 questions.",
+    s2_p: "Six kinds of question, from finding one line to counting across the whole log. Each cell is the share of correct answers over {cellq} questions.",
     fam_L1: "Find: was order #… returned?",
     fam_L2: "Find: which warehouse shipped it?",
     fam_X1: "Cross-check: ordered after closing the account?",
@@ -58,7 +58,7 @@ window.I18N = {
     s3b_p: "In practice you act on an answer only when the model is confident enough, and send the rest to a person. We pick the lowest confidence threshold that keeps errors at 5% or less on the even-numbered logs, then measure it on the odd ones, and the other way round. The bar is the share of answers above the threshold; the number next to it is the error they actually had. Metric borrowed from another community benchmark of these two models.",
     auto_err: "error",
     auto_none: "no threshold reaches 5%",
-    s3b_finding: "Up to 16K both could automate almost everything at 5% error or less. As logs grow, the share you can trust falls: SubQ goes from {autos30}% at 30K to {autos360}% at 360K, and Jev reading chunks ranges from {autojmin}% to {autojmax}% depending on size. Read the long-log cells with care: with 10 logs per size the thresholds are noisy, and several of them miss the 5% target on the half they are measured on.",
+    s3b_finding: "Up to 16K both could automate almost everything at 5% error or less. As logs grow, the share you can trust falls: SubQ goes from {autos30}% at 30K to {autos360}% at 360K, and Jev reading chunks ranges from {autojmin}% to {autojmax}% depending on size. Read the long-log cells with care: with {logs} logs per size the thresholds are noisy, and several of them miss the 5% target on the half they are measured on.",
 
     s4_title: "Same question, different wrapping",
     s4_p: "On the 8K logs, where both models are near-perfect, we change things that shouldn't change the answer.",
@@ -146,7 +146,7 @@ window.I18N = {
     r_foot: "Jev admite unos 32.7K tokens por llamada, así que en los registros largos lee trozos de 29K y se combinan sus respuestas.",
 
     s1_title: "El pajar crece",
-    s1_p: "Cada registro es el historial de eventos de una tienda online inventada: pedidos, envíos, devoluciones, reembolsos, cuentas cerradas e incidencias. Hay 10 registros de cada uno de 8 tamaños, de 2K a 360K tokens. A partir de 32.7K tokens Jev responde max_tokens_exceeded, así que en los registros largos también recibe el registro partido en trozos de 29K.",
+    s1_p: "Cada registro es el historial de eventos de una tienda online inventada: pedidos, envíos, devoluciones, reembolsos, cuentas cerradas e incidencias. Hay {logs} registros de cada uno de 8 tamaños, de 2K a 360K tokens. A partir de 32.7K tokens Jev responde max_tokens_exceeded, así que en los registros largos también recibe el registro partido en trozos de 29K.",
     s1_tape: "Tamaño del registro, a escala",
     s1_window: "Ventana de Jev",
     s1_cut: "cortes para Jev",
@@ -161,7 +161,7 @@ window.I18N = {
     readout: "{len} tokens",
 
     s2_title: "Dónde se rompe cada uno",
-    s2_p: "Seis tipos de pregunta, desde encontrar una línea hasta contar en todo el registro. Cada casilla es el porcentaje de aciertos sobre 20 preguntas.",
+    s2_p: "Seis tipos de pregunta, desde encontrar una línea hasta contar en todo el registro. Cada casilla es el porcentaje de aciertos sobre {cellq} preguntas.",
     fam_L1: "Buscar: ¿se devolvió el pedido #…?",
     fam_L2: "Buscar: ¿qué almacén lo envió?",
     fam_X1: "Cruzar: ¿compró después de cerrar la cuenta?",
@@ -184,7 +184,7 @@ window.I18N = {
     s3b_p: "En la práctica solo actúas sobre una respuesta si el modelo está lo bastante seguro, y el resto lo revisa una persona. Elegimos el umbral de confianza más bajo que mantiene los errores en un 5 % o menos con los registros pares y lo medimos con los impares, y al revés. La barra es la parte de respuestas por encima del umbral; el número de al lado, el error que tuvieron de verdad. Métrica tomada de otra prueba de la comunidad con estos dos modelos.",
     auto_err: "error",
     auto_none: "ningún umbral llega al 5 %",
-    s3b_finding: "Hasta 16K los dos podrían automatizar casi todo con un 5 % de error o menos. Al crecer el registro, la parte de la que te puedes fiar baja: SubQ pasa del {autos30} % con 30K al {autos360} % con 360K, y Jev leyendo por trozos va del {autojmin} % al {autojmax} % según el tamaño. Las casillas de registros largos hay que leerlas con cuidado: con 10 registros por tamaño los umbrales son ruidosos, y varios no cumplen el 5 % en la mitad donde se miden.",
+    s3b_finding: "Hasta 16K los dos podrían automatizar casi todo con un 5 % de error o menos. Al crecer el registro, la parte de la que te puedes fiar baja: SubQ pasa del {autos30} % con 30K al {autos360} % con 360K, y Jev leyendo por trozos va del {autojmin} % al {autojmax} % según el tamaño. Las casillas de registros largos hay que leerlas con cuidado: con {logs} registros por tamaño los umbrales son ruidosos, y varios no cumplen el 5 % en la mitad donde se miden.",
 
     s4_title: "La misma pregunta, otro envoltorio",
     s4_p: "Con los registros de 8K, donde los dos modelos son casi perfectos, cambiamos cosas que no deberían cambiar la respuesta.",
