@@ -70,6 +70,18 @@
       n: rb.jev.option_shuffle_n,
       date: new Date(data.meta.first_call).toLocaleDateString(lang, { day: "numeric", month: "long", year: "numeric" }),
       versions: Object.values(data.meta.model_versions).flat().join(", "),
+      subqshort: pct(data.head_to_head.subq.overall.acc),
+      jevshort: pct(data.head_to_head.jev.overall.acc),
+      s30: pct(row("subq", 30000).acc),
+      s64: pct(row("subq", 64000).acc),
+      s360: pct(row("subq", 360000).acc),
+      subq8: num(lat("subq", 8000).p50, 2),
+      subq128: num(lat("subq", 128000).p50, 2),
+      jev8: num(lat("jev", 8000).p50, 2),
+      jevc360: pct(row("jev_chunked", 360000).acc),
+      jeva1: pct(data.head_to_head.jev.families.A1.acc),
+      subqa1: pct(data.head_to_head.subq.families.A1.acc),
+      jevident: pct(rb.jev.repeat_identical_rate, 0),
     };
   }
 
@@ -553,6 +565,26 @@
     }
   }
 
+  // ---------- takeaways ----------
+  function renderTakeaways() {
+    const box = $("#takeaways");
+    box.innerHTML = "";
+    const v = vars();
+    for (const s of ["subq", "jev"]) {
+      const col = h("div", {}, box);
+      h("h3", { class: `c-${s}` }, col, s === "subq" ? "SubQ Snap" : "Jev");
+      for (const [kind, mark] of [["good", "+"], ["watch", "−"]]) {
+        h("p", { class: "tk-h" }, col, T()["tk_" + kind]);
+        const ul = h("ul", { class: "tk" }, col);
+        for (const item of T()[`tk_${s}_${kind}`]) {
+          const li = h("li", {}, ul);
+          h("span", { class: "tk-mark", "aria-hidden": "true" }, li, mark);
+          h("span", {}, li, fill(item, v));
+        }
+      }
+    }
+  }
+
   // ---------- render ----------
   function renderAll() {
     applyText();
@@ -565,6 +597,7 @@
     renderCalib();
     renderRobust();
     renderRace(false);
+    renderTakeaways();
   }
   renderAll();
 

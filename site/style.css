@@ -226,6 +226,16 @@ h3 { font: 600 18px var(--mono); margin: 32px 0 10px; }
 .cost .row span:not(:first-child) { text-align: right; }
 .cost .row.h { color: var(--ink-3); font-size: 12px; }
 
+/* takeaways */
+.takeaways { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.takeaways h3 { margin: 0 0 10px; font-size: 20px; }
+.tk-h { font: 600 13px var(--mono); color: var(--ink-2); margin: 18px 0 6px; }
+.tk { list-style: none; margin: 0; padding: 0; }
+.tk li { display: grid; grid-template-columns: 18px 1fr; padding: 7px 0; border-bottom: 1px solid var(--rule); font-size: 15px; }
+.tk li:first-child { border-top: 1px solid var(--rule); }
+.tk-mark { font: 600 15px var(--mono); color: var(--ink-3); }
+@media (max-width: 820px) { .takeaways { grid-template-columns: 1fr; gap: 24px; } }
+
 /* method */
 .method { max-width: 760px; padding-left: 22px; color: var(--ink-2); }
 .method li { margin-bottom: 10px; }

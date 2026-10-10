@@ -81,6 +81,34 @@ window.I18N = {
     s5_note: "Jev's chunks were sent one after another; sent in parallel they would take about as long as one call. Jev also reports output tokens, whose price we couldn't find published; SubQ doesn't charge for output.",
     s5_run: "Run",
 
+    s7_title: "Takeaways",
+    tk_good: "Strong",
+    tk_watch: "Watch out",
+    tk_subq_good: [
+      "Most accurate up to 30K: {subqshort}% vs {jevshort}%, and 100% at 8K and 16K.",
+      "Fully deterministic. Shuffling options, rephrasing or negating the question never changed an answer.",
+      "Best calibrated up to 30K: error {subqece} vs {jevece}.",
+      "Reads a 360K-token log in one call, with no chunking code to write.",
+    ],
+    tk_subq_watch: [
+      "Accuracy falls as the log grows: {s30}% at 30K, {s64}% at 64K, {s360}% at 360K.",
+      "On long logs its confidence drops more slowly than its accuracy: answers given at about 75% were right {subq75}% of the time.",
+      "In the pilot, requests over its context limit came back as 503 internal_error after about 17 s instead of a clear max-tokens error.",
+      "Slower: {subq8} s median at 8K and {subq128} s at 128K.",
+    ],
+    tk_jev_good: [
+      "About 3x faster: {jev8} s median at 8K.",
+      "Reading 29K chunks it still got {jevc360}% at 360K, though combining the chunks is code you write.",
+      "Calibrated up to 30K: error {jevece}.",
+    ],
+    tk_jev_watch: [
+      "Hard limit of about 32.7K tokens per call; above it the API answers max_tokens_exceeded.",
+      "Weak at \"which warehouse had the most\": {jeva1}% up to 30K, vs {subqa1}% for SubQ.",
+      "Not deterministic: {jevident}% byte-identical outputs on repeat, and {jevshuffle} of {n} answers changed when the options were shuffled.",
+      "Its combined chunk answers are overconfident (error {jevcece}).",
+    ],
+    s7_bottom: "If your inputs fit in 30K tokens, both are accurate: SubQ is steadier and better calibrated, Jev is faster. Past that, in this test, a bigger window did not beat cutting the log into pieces.",
+
     s6_title: "How it was done",
     m1: "Logs are generated from a fixed seed. The correct answers come from the same code, and a test re-derives every one of them from the log text alone.",
     m2: "Both APIs share the same contract, so each model received a byte-identical request: same log, same questions, no tuning per model.",
@@ -173,6 +201,34 @@ window.I18N = {
     s5_cost: "Coste por 1.000 decisiones a precio de lista",
     s5_note: "Los trozos de Jev se enviaron uno detrás de otro; en paralelo tardarían más o menos lo que una llamada. Jev además cuenta tokens de salida, cuyo precio no hemos encontrado publicado; SubQ no cobra la salida.",
     s5_run: "Lanzar",
+
+    s7_title: "Conclusiones",
+    tk_good: "Puntos fuertes",
+    tk_watch: "A tener en cuenta",
+    tk_subq_good: [
+      "El más preciso hasta 30K: {subqshort} % frente a {jevshort} %, y un 100 % con 8K y 16K.",
+      "Totalmente determinista. Barajar las opciones, reformular o negar la pregunta nunca cambió una respuesta.",
+      "El mejor calibrado hasta 30K: error de {subqece} frente a {jevece}.",
+      "Lee un registro de 360K tokens en una sola llamada, sin tener que escribir código para trocearlo.",
+    ],
+    tk_subq_watch: [
+      "El acierto baja al crecer el registro: {s30} % con 30K, {s64} % con 64K y {s360} % con 360K.",
+      "En registros largos su confianza baja más despacio que su acierto: las respuestas dadas con alrededor de un 75 % acertaron el {subq75} % de las veces.",
+      "En el piloto, las peticiones por encima de su límite de contexto devolvieron un 503 internal_error tras unos 17 s, en lugar de un error claro de límite.",
+      "Más lento: {subq8} s de mediana con 8K y {subq128} s con 128K.",
+    ],
+    tk_jev_good: [
+      "Unas 3 veces más rápido: {jev8} s de mediana con 8K.",
+      "Leyendo trozos de 29K aún acertó el {jevc360} % con 360K, aunque combinar los trozos es código que escribes tú.",
+      "Calibrado hasta 30K: error de {jevece}.",
+    ],
+    tk_jev_watch: [
+      "Límite fijo de unos 32.7K tokens por llamada; por encima, la API responde max_tokens_exceeded.",
+      "Flojo en \"qué almacén tuvo más\": {jeva1} % hasta 30K, frente al {subqa1} % de SubQ.",
+      "No es determinista: {jevident} % de salidas idénticas al repetir, y cambió {jevshuffle} de {n} respuestas al barajar las opciones.",
+      "Sus respuestas combinadas por trozos se pasan de confianza (error {jevcece}).",
+    ],
+    s7_bottom: "Si tus entradas caben en 30K tokens, los dos aciertan: SubQ es más estable y está mejor calibrado, Jev es más rápido. Por encima, en esta prueba, una ventana más grande no superó a partir el registro en trozos.",
 
     s6_title: "Cómo se hizo",
     m1: "Los registros se generan a partir de una semilla fija. Las respuestas correctas salen del mismo código, y una prueba vuelve a calcular cada una leyendo solo el texto del registro.",
