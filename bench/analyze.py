@@ -158,6 +158,36 @@ def main():
                    "long": {s: calib([i for i in graded if i["series"] == s and i["length"] not in shared]) for s in ["subq", "jev_chunked"]},
                    "all": {s: calib([i for i in graded if i["series"] == s]) for s in series}}
 
+    def auto_threshold(items, max_err):
+        """Lowest confidence threshold whose answers above it stay within the error budget (most coverage)."""
+        best = None
+        for t in sorted({i["conf"] for i in items}):
+            above = [i for i in items if i["conf"] >= t]
+            if 1 - sum(i["correct"] for i in above) / len(above) <= max_err:
+                best = t
+                break
+        return best
+
+    def automation(items, max_err=0.05):
+        """How many answers you could act on automatically at <= max_err error. The threshold is fit on
+        the even logs and measured on the odd ones, then the other way round (2-fold, split by log)."""
+        folds = [[i for i in items if cases[i["case"]]["log"] % 2 == k] for k in (0, 1)]
+        covered = correct = 0
+        for fit, test in [(folds[0], folds[1]), (folds[1], folds[0])]:
+            t = auto_threshold(fit, max_err)
+            above = [i for i in test if t is not None and i["conf"] >= t]
+            covered += len(above)
+            correct += sum(i["correct"] for i in above)
+        return {"coverage": round(covered / len(items), 4), "error": round(1 - correct / covered, 4) if covered else None,
+                "n": len(items)}
+
+    # Thresholds are fit per size: one threshold across all long sizes would mix very different behaviours.
+    auto = {
+        "shared": {s: automation([i for i in graded if i["series"] == s and i["length"] in shared]) for s in ["subq", "jev"]},
+        "by_length": [{"series": s, "length": l, **automation([i for i in graded if i["series"] == s and i["length"] == l])}
+                      for s in series for l in g.LENGTHS if any(i["series"] == s and i["length"] == l for i in graded)],
+    }
+
     latency = []
     for (s, length), cs in sorted(calls.items(), key=lambda kv: (kv[0][0], kv[0][1])):
         lat = [c["latency"] for c in cs]
@@ -223,7 +253,7 @@ def main():
                  "model_versions": {k: sorted(v) for k, v in versions.items()}, "cases": len(cases),
                  "answers_graded": len(graded), "lengths": g.LENGTHS, "logs_per_length": g.LOGS_PER_LENGTH,
                  "prices_usd_per_m_input": PRICE_PER_M_INPUT},
-        "head_to_head": head_to_head, "by_length": by_length, "depth": depth, "calibration": calibration,
+        "head_to_head": head_to_head, "automation": auto, "by_length": by_length, "depth": depth, "calibration": calibration,
         "latency": latency, "robustness": robustness,
         "errors": [{"model": m, "task": t, "length": l, "type": e, "count": c} for (m, t, l, e), c in sorted(errors.items())],
         "hero": hero,
@@ -237,6 +267,7 @@ def main():
         print(f"  {row['series']:<12} {row['length']:>7}  {row['acc']:.3f} (n={row['n']})  {fams}")
     print("head to head <=30K", {s: v["overall"]["acc"] for s, v in head_to_head.items()})
     print("calibration", {sc: {s: (v["ece"], v["brier"]) for s, v in c.items()} for sc, c in calibration.items()})
+    print("automation", json.dumps({k: v for k, v in auto.items() if k != "by_length"}), [(r["series"], r["length"], r["coverage"], r["error"]) for r in auto["by_length"]])
     print("latency", [(l["series"], l["length"], l["p50"]) for l in latency])
     print("robustness", json.dumps(robustness, indent=1))
     print("errors", out["errors"])

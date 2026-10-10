@@ -48,6 +48,7 @@
   const row = (series, length) => data.by_length.find((r) => r.series === series && r.length === length);
   const lat = (series, length) => data.latency.find((r) => r.series === series && r.length === length);
   const longSeries = (l) => (l > 30000 ? "jev_chunked" : "jev");
+  const autoAt = (s, l) => data.automation.by_length.find((x) => x.series === s && x.length === l).coverage;
 
   // ---------- numbers used in the copy ----------
   function vars() {
@@ -81,6 +82,10 @@
       jevc360: pct(row("jev_chunked", 360000).acc),
       jeva1: pct(data.head_to_head.jev.families.A1.acc),
       subqa1: pct(data.head_to_head.subq.families.A1.acc),
+      autos30: pct(autoAt("subq", 30000), 0),
+      autos360: pct(autoAt("subq", 360000), 0),
+      autojmin: pct(Math.min(...LENS.filter((l) => l > 30000).map((l) => autoAt("jev_chunked", l))), 0),
+      autojmax: pct(Math.max(...LENS.filter((l) => l > 30000).map((l) => autoAt("jev_chunked", l))), 0),
       jevident: pct(rb.jev.repeat_identical_rate, 0),
     };
   }
@@ -431,6 +436,32 @@
     });
   }
 
+  // ---------- automation at <=5% error ----------
+  function renderAuto() {
+    const box = $("#auto");
+    box.innerHTML = "";
+    const grid = h("div", { class: "readout-grid auto-grid" }, box);
+    h("div", { class: "h" }, grid, "");
+    h("div", { class: "h c-subq" }, grid, "SubQ");
+    h("div", { class: "h c-jev" }, grid, "Jev");
+    const bars = [];
+    for (const l of LENS) {
+      h("div", { class: "mono" }, grid, K(l) + (l > 30000 ? ` · Jev ${T().r_chunked}` : ""));
+      for (const s of ["subq", longSeries(l)]) {
+        const r = data.automation.by_length.find((x) => x.series === s && x.length === l);
+        const d = h("div", { class: "bar-cell" }, grid);
+        const b = h("i", { class: "b", style: `width:0;background:${COLOR[s]}` }, d);
+        h("span", {}, d, P(r.coverage, 0));
+        h("span", { class: "na" }, d, r.error === null ? T().auto_none : `${T().auto_err} ${P(r.error, 1)}`);
+        bars.push([b, r.coverage]);
+      }
+    }
+    onView(box, "auto", (instant) => bars.forEach(([b, c], k) => {
+      if (instant) { b.style.transition = "none"; b.style.width = `${c * 60}px`; }
+      else setTimeout(() => (b.style.width = `${c * 60}px`), k * 40);
+    }));
+  }
+
   // ---------- robustness ----------
   const loops = [];
   function renderRobust() {
@@ -595,6 +626,7 @@
     renderReadout();
     renderGrids();
     renderCalib();
+    renderAuto();
     renderRobust();
     renderRace(false);
     renderTakeaways();

@@ -165,6 +165,134 @@
    }
   }
  },
+ "automation": {
+  "shared": {
+   "subq": {
+    "coverage": 0.9938,
+    "error": 0.0294,
+    "n": 480
+   },
+   "jev": {
+    "coverage": 0.9833,
+    "error": 0.0424,
+    "n": 480
+   }
+  },
+  "by_length": [
+   {
+    "series": "subq",
+    "length": 2000,
+    "coverage": 0.9667,
+    "error": 0.0,
+    "n": 120
+   },
+   {
+    "series": "subq",
+    "length": 8000,
+    "coverage": 0.9917,
+    "error": 0.0,
+    "n": 120
+   },
+   {
+    "series": "subq",
+    "length": 16000,
+    "coverage": 0.9917,
+    "error": 0.0,
+    "n": 120
+   },
+   {
+    "series": "subq",
+    "length": 30000,
+    "coverage": 0.7917,
+    "error": 0.0632,
+    "n": 120
+   },
+   {
+    "series": "subq",
+    "length": 64000,
+    "coverage": 0.3167,
+    "error": 0.0789,
+    "n": 120
+   },
+   {
+    "series": "subq",
+    "length": 128000,
+    "coverage": 0.1833,
+    "error": 0.1364,
+    "n": 120
+   },
+   {
+    "series": "subq",
+    "length": 256000,
+    "coverage": 0.0917,
+    "error": 0.0909,
+    "n": 120
+   },
+   {
+    "series": "subq",
+    "length": 360000,
+    "coverage": 0.0917,
+    "error": 0.0909,
+    "n": 120
+   },
+   {
+    "series": "jev",
+    "length": 2000,
+    "coverage": 0.9833,
+    "error": 0.0,
+    "n": 120
+   },
+   {
+    "series": "jev",
+    "length": 8000,
+    "coverage": 0.9417,
+    "error": 0.0177,
+    "n": 120
+   },
+   {
+    "series": "jev",
+    "length": 16000,
+    "coverage": 0.9083,
+    "error": 0.0459,
+    "n": 120
+   },
+   {
+    "series": "jev",
+    "length": 30000,
+    "coverage": 0.9417,
+    "error": 0.0265,
+    "n": 120
+   },
+   {
+    "series": "jev_chunked",
+    "length": 64000,
+    "coverage": 0.4083,
+    "error": 0.102,
+    "n": 120
+   },
+   {
+    "series": "jev_chunked",
+    "length": 128000,
+    "coverage": 0.8333,
+    "error": 0.06,
+    "n": 120
+   },
+   {
+    "series": "jev_chunked",
+    "length": 256000,
+    "coverage": 0.1417,
+    "error": 0.0588,
+    "n": 120
+   },
+   {
+    "series": "jev_chunked",
+    "length": 360000,
+    "coverage": 0.0,
+    "error": null,
+    "n": 120
+   }
+  ]
+ },
  "by_length": [
   {
    "series": "subq",
