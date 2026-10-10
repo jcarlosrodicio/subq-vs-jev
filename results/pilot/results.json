@@ -1,0 +1,1952 @@
+{
+ "meta": {
+  "generated_from": "../results/pilot/answers.jsonl",
+  "first_call": "2026-10-10T18:44:30+00:00",
+  "last_call": "2026-10-10T18:45:10+00:00",
+  "model_versions": {
+   "jev": [
+    "jev-1.13.0"
+   ],
+   "subq": [
+    "subq-snap-preview"
+   ]
+  },
+  "cases": 8,
+  "answers_graded": 192,
+  "lengths": [
+   2000,
+   8000,
+   16000,
+   30000,
+   64000,
+   128000,
+   256000,
+   360000
+  ],
+  "logs_per_length": 10,
+  "prices_usd_per_m_input": {
+   "jev": 0.042,
+   "subq": 0.09
+  }
+ },
+ "head_to_head": {
+  "subq": {
+   "overall": {
+    "n": 48,
+    "correct": 47,
+    "acc": 0.9792,
+    "ci": [
+     0.891,
+     0.9963
+    ]
+   },
+   "families": {
+    "L1": {
+     "n": 8,
+     "correct": 8,
+     "acc": 1.0,
+     "ci": [
+      0.6756,
+      1.0
+     ]
+    },
+    "L2": {
+     "n": 8,
+     "correct": 8,
+     "acc": 1.0,
+     "ci": [
+      0.6756,
+      1.0
+     ]
+    },
+    "X1": {
+     "n": 8,
+     "correct": 7,
+     "acc": 0.875,
+     "ci": [
+      0.5291,
+      0.9776
+     ]
+    },
+    "X2": {
+     "n": 8,
+     "correct": 8,
+     "acc": 1.0,
+     "ci": [
+      0.6756,
+      1.0
+     ]
+    },
+    "A1": {
+     "n": 8,
+     "correct": 8,
+     "acc": 1.0,
+     "ci": [
+      0.6756,
+      1.0
+     ]
+    },
+    "A2": {
+     "n": 8,
+     "correct": 8,
+     "acc": 1.0,
+     "ci": [
+      0.6756,
+      1.0
+     ]
+    }
+   }
+  },
+  "jev": {
+   "overall": {
+    "n": 48,
+    "correct": 46,
+    "acc": 0.9583,
+    "ci": [
+     0.8602,
+     0.9885
+    ]
+   },
+   "families": {
+    "L1": {
+     "n": 8,
+     "correct": 8,
+     "acc": 1.0,
+     "ci": [
+      0.6756,
+      1.0
+     ]
+    },
+    "L2": {
+     "n": 8,
+     "correct": 8,
+     "acc": 1.0,
+     "ci": [
+      0.6756,
+      1.0
+     ]
+    },
+    "X1": {
+     "n": 8,
+     "correct": 8,
+     "acc": 1.0,
+     "ci": [
+      0.6756,
+      1.0
+     ]
+    },
+    "X2": {
+     "n": 8,
+     "correct": 8,
+     "acc": 1.0,
+     "ci": [
+      0.6756,
+      1.0
+     ]
+    },
+    "A1": {
+     "n": 8,
+     "correct": 7,
+     "acc": 0.875,
+     "ci": [
+      0.5291,
+      0.9776
+     ]
+    },
+    "A2": {
+     "n": 8,
+     "correct": 7,
+     "acc": 0.875,
+     "ci": [
+      0.5291,
+      0.9776
+     ]
+    }
+   }
+  }
+ },
+ "by_length": [
+  {
+   "series": "subq",
+   "length": 2000,
+   "n": 12,
+   "correct": 12,
+   "acc": 1.0,
+   "ci": [
+    0.7575,
+    1.0
+   ],
+   "families": {
+    "L1": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "L2": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "X1": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "X2": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "A1": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "A2": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    }
+   }
+  },
+  {
+   "series": "subq",
+   "length": 8000,
+   "n": 12,
+   "correct": 12,
+   "acc": 1.0,
+   "ci": [
+    0.7575,
+    1.0
+   ],
+   "families": {
+    "L1": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "L2": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "X1": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "X2": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "A1": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "A2": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    }
+   }
+  },
+  {
+   "series": "subq",
+   "length": 16000,
+   "n": 12,
+   "correct": 12,
+   "acc": 1.0,
+   "ci": [
+    0.7575,
+    1.0
+   ],
+   "families": {
+    "L1": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "L2": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "X1": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "X2": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "A1": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "A2": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    }
+   }
+  },
+  {
+   "series": "subq",
+   "length": 30000,
+   "n": 12,
+   "correct": 11,
+   "acc": 0.9167,
+   "ci": [
+    0.6461,
+    0.9851
+   ],
+   "families": {
+    "L1": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "L2": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "X1": {
+     "n": 2,
+     "correct": 1,
+     "acc": 0.5,
+     "ci": [
+      0.0945,
+      0.9055
+     ]
+    },
+    "X2": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "A1": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "A2": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    }
+   }
+  },
+  {
+   "series": "subq",
+   "length": 64000,
+   "n": 12,
+   "correct": 6,
+   "acc": 0.5,
+   "ci": [
+    0.2538,
+    0.7462
+   ],
+   "families": {
+    "L1": {
+     "n": 2,
+     "correct": 0,
+     "acc": 0.0,
+     "ci": [
+      0.0,
+      0.6576
+     ]
+    },
+    "L2": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "X1": {
+     "n": 2,
+     "correct": 1,
+     "acc": 0.5,
+     "ci": [
+      0.0945,
+      0.9055
+     ]
+    },
+    "X2": {
+     "n": 2,
+     "correct": 1,
+     "acc": 0.5,
+     "ci": [
+      0.0945,
+      0.9055
+     ]
+    },
+    "A1": {
+     "n": 2,
+     "correct": 1,
+     "acc": 0.5,
+     "ci": [
+      0.0945,
+      0.9055
+     ]
+    },
+    "A2": {
+     "n": 2,
+     "correct": 1,
+     "acc": 0.5,
+     "ci": [
+      0.0945,
+      0.9055
+     ]
+    }
+   }
+  },
+  {
+   "series": "subq",
+   "length": 128000,
+   "n": 12,
+   "correct": 8,
+   "acc": 0.6667,
+   "ci": [
+    0.3906,
+    0.8619
+   ],
+   "families": {
+    "L1": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "L2": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "X1": {
+     "n": 2,
+     "correct": 1,
+     "acc": 0.5,
+     "ci": [
+      0.0945,
+      0.9055
+     ]
+    },
+    "X2": {
+     "n": 2,
+     "correct": 0,
+     "acc": 0.0,
+     "ci": [
+      0.0,
+      0.6576
+     ]
+    },
+    "A1": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "A2": {
+     "n": 2,
+     "correct": 1,
+     "acc": 0.5,
+     "ci": [
+      0.0945,
+      0.9055
+     ]
+    }
+   }
+  },
+  {
+   "series": "subq",
+   "length": 256000,
+   "n": 12,
+   "correct": 7,
+   "acc": 0.5833,
+   "ci": [
+    0.3195,
+    0.8067
+   ],
+   "families": {
+    "L1": {
+     "n": 2,
+     "correct": 1,
+     "acc": 0.5,
+     "ci": [
+      0.0945,
+      0.9055
+     ]
+    },
+    "L2": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "X1": {
+     "n": 2,
+     "correct": 1,
+     "acc": 0.5,
+     "ci": [
+      0.0945,
+      0.9055
+     ]
+    },
+    "X2": {
+     "n": 2,
+     "correct": 1,
+     "acc": 0.5,
+     "ci": [
+      0.0945,
+      0.9055
+     ]
+    },
+    "A1": {
+     "n": 2,
+     "correct": 1,
+     "acc": 0.5,
+     "ci": [
+      0.0945,
+      0.9055
+     ]
+    },
+    "A2": {
+     "n": 2,
+     "correct": 1,
+     "acc": 0.5,
+     "ci": [
+      0.0945,
+      0.9055
+     ]
+    }
+   }
+  },
+  {
+   "series": "subq",
+   "length": 360000,
+   "n": 12,
+   "correct": 6,
+   "acc": 0.5,
+   "ci": [
+    0.2538,
+    0.7462
+   ],
+   "families": {
+    "L1": {
+     "n": 2,
+     "correct": 1,
+     "acc": 0.5,
+     "ci": [
+      0.0945,
+      0.9055
+     ]
+    },
+    "L2": {
+     "n": 2,
+     "correct": 1,
+     "acc": 0.5,
+     "ci": [
+      0.0945,
+      0.9055
+     ]
+    },
+    "X1": {
+     "n": 2,
+     "correct": 1,
+     "acc": 0.5,
+     "ci": [
+      0.0945,
+      0.9055
+     ]
+    },
+    "X2": {
+     "n": 2,
+     "correct": 1,
+     "acc": 0.5,
+     "ci": [
+      0.0945,
+      0.9055
+     ]
+    },
+    "A1": {
+     "n": 2,
+     "correct": 1,
+     "acc": 0.5,
+     "ci": [
+      0.0945,
+      0.9055
+     ]
+    },
+    "A2": {
+     "n": 2,
+     "correct": 1,
+     "acc": 0.5,
+     "ci": [
+      0.0945,
+      0.9055
+     ]
+    }
+   }
+  },
+  {
+   "series": "jev",
+   "length": 2000,
+   "n": 12,
+   "correct": 12,
+   "acc": 1.0,
+   "ci": [
+    0.7575,
+    1.0
+   ],
+   "families": {
+    "L1": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "L2": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "X1": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "X2": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "A1": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "A2": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    }
+   }
+  },
+  {
+   "series": "jev",
+   "length": 8000,
+   "n": 12,
+   "correct": 11,
+   "acc": 0.9167,
+   "ci": [
+    0.6461,
+    0.9851
+   ],
+   "families": {
+    "L1": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "L2": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "X1": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "X2": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "A1": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "A2": {
+     "n": 2,
+     "correct": 1,
+     "acc": 0.5,
+     "ci": [
+      0.0945,
+      0.9055
+     ]
+    }
+   }
+  },
+  {
+   "series": "jev",
+   "length": 16000,
+   "n": 12,
+   "correct": 12,
+   "acc": 1.0,
+   "ci": [
+    0.7575,
+    1.0
+   ],
+   "families": {
+    "L1": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "L2": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "X1": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "X2": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "A1": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "A2": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    }
+   }
+  },
+  {
+   "series": "jev",
+   "length": 30000,
+   "n": 12,
+   "correct": 11,
+   "acc": 0.9167,
+   "ci": [
+    0.6461,
+    0.9851
+   ],
+   "families": {
+    "L1": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "L2": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "X1": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "X2": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "A1": {
+     "n": 2,
+     "correct": 1,
+     "acc": 0.5,
+     "ci": [
+      0.0945,
+      0.9055
+     ]
+    },
+    "A2": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    }
+   }
+  },
+  {
+   "series": "jev_chunked",
+   "length": 64000,
+   "n": 12,
+   "correct": 10,
+   "acc": 0.8333,
+   "ci": [
+    0.552,
+    0.953
+   ],
+   "families": {
+    "L1": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "L2": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "X1": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "X2": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "A1": {
+     "n": 2,
+     "correct": 1,
+     "acc": 0.5,
+     "ci": [
+      0.0945,
+      0.9055
+     ]
+    },
+    "A2": {
+     "n": 2,
+     "correct": 1,
+     "acc": 0.5,
+     "ci": [
+      0.0945,
+      0.9055
+     ]
+    }
+   }
+  },
+  {
+   "series": "jev_chunked",
+   "length": 128000,
+   "n": 12,
+   "correct": 10,
+   "acc": 0.8333,
+   "ci": [
+    0.552,
+    0.953
+   ],
+   "families": {
+    "L1": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "L2": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "X1": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "X2": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "A1": {
+     "n": 2,
+     "correct": 1,
+     "acc": 0.5,
+     "ci": [
+      0.0945,
+      0.9055
+     ]
+    },
+    "A2": {
+     "n": 2,
+     "correct": 1,
+     "acc": 0.5,
+     "ci": [
+      0.0945,
+      0.9055
+     ]
+    }
+   }
+  },
+  {
+   "series": "jev_chunked",
+   "length": 256000,
+   "n": 12,
+   "correct": 10,
+   "acc": 0.8333,
+   "ci": [
+    0.552,
+    0.953
+   ],
+   "families": {
+    "L1": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "L2": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "X1": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "X2": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "A1": {
+     "n": 2,
+     "correct": 1,
+     "acc": 0.5,
+     "ci": [
+      0.0945,
+      0.9055
+     ]
+    },
+    "A2": {
+     "n": 2,
+     "correct": 1,
+     "acc": 0.5,
+     "ci": [
+      0.0945,
+      0.9055
+     ]
+    }
+   }
+  },
+  {
+   "series": "jev_chunked",
+   "length": 360000,
+   "n": 12,
+   "correct": 11,
+   "acc": 0.9167,
+   "ci": [
+    0.6461,
+    0.9851
+   ],
+   "families": {
+    "L1": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "L2": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "X1": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "X2": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    },
+    "A1": {
+     "n": 2,
+     "correct": 1,
+     "acc": 0.5,
+     "ci": [
+      0.0945,
+      0.9055
+     ]
+    },
+    "A2": {
+     "n": 2,
+     "correct": 2,
+     "acc": 1.0,
+     "ci": [
+      0.3424,
+      1.0
+     ]
+    }
+   }
+  }
+ ],
+ "depth": [
+  {
+   "series": "subq",
+   "depth": 0.1,
+   "n": 24,
+   "correct": 21,
+   "acc": 0.875,
+   "ci": [
+    0.69,
+    0.9566
+   ]
+  },
+  {
+   "series": "subq",
+   "depth": 0.5,
+   "n": 24,
+   "correct": 13,
+   "acc": 0.5417,
+   "ci": [
+    0.3507,
+    0.7211
+   ]
+  },
+  {
+   "series": "subq",
+   "depth": 0.9,
+   "n": 16,
+   "correct": 15,
+   "acc": 0.9375,
+   "ci": [
+    0.7167,
+    0.9889
+   ]
+  },
+  {
+   "series": "jev",
+   "depth": 0.1,
+   "n": 12,
+   "correct": 12,
+   "acc": 1.0,
+   "ci": [
+    0.7575,
+    1.0
+   ]
+  },
+  {
+   "series": "jev",
+   "depth": 0.5,
+   "n": 12,
+   "correct": 12,
+   "acc": 1.0,
+   "ci": [
+    0.7575,
+    1.0
+   ]
+  },
+  {
+   "series": "jev",
+   "depth": 0.9,
+   "n": 8,
+   "correct": 8,
+   "acc": 1.0,
+   "ci": [
+    0.6756,
+    1.0
+   ]
+  },
+  {
+   "series": "jev_chunked",
+   "depth": 0.1,
+   "n": 12,
+   "correct": 12,
+   "acc": 1.0,
+   "ci": [
+    0.7575,
+    1.0
+   ]
+  },
+  {
+   "series": "jev_chunked",
+   "depth": 0.5,
+   "n": 12,
+   "correct": 12,
+   "acc": 1.0,
+   "ci": [
+    0.7575,
+    1.0
+   ]
+  },
+  {
+   "series": "jev_chunked",
+   "depth": 0.9,
+   "n": 8,
+   "correct": 8,
+   "acc": 1.0,
+   "ci": [
+    0.6756,
+    1.0
+   ]
+  }
+ ],
+ "calibration": {
+  "subq": {
+   "bins": [
+    {
+     "lo": 0.3,
+     "hi": 0.4,
+     "n": 2,
+     "conf": 0.3427,
+     "acc": 0.0
+    },
+    {
+     "lo": 0.4,
+     "hi": 0.5,
+     "n": 2,
+     "conf": 0.4849,
+     "acc": 0.0
+    },
+    {
+     "lo": 0.5,
+     "hi": 0.6,
+     "n": 3,
+     "conf": 0.5445,
+     "acc": 0.0
+    },
+    {
+     "lo": 0.6,
+     "hi": 0.7,
+     "n": 4,
+     "conf": 0.6465,
+     "acc": 0.5
+    },
+    {
+     "lo": 0.7,
+     "hi": 0.8,
+     "n": 7,
+     "conf": 0.7563,
+     "acc": 0.4286
+    },
+    {
+     "lo": 0.8,
+     "hi": 0.9,
+     "n": 18,
+     "conf": 0.8474,
+     "acc": 0.6111
+    },
+    {
+     "lo": 0.9,
+     "hi": 1.0,
+     "n": 60,
+     "conf": 0.9678,
+     "acc": 0.9667
+    }
+   ],
+   "ece": 0.1092,
+   "brier": 0.1297,
+   "n": 96,
+   "mean_conf": 0.8801
+  },
+  "jev": {
+   "bins": [
+    {
+     "lo": 0.4,
+     "hi": 0.5,
+     "n": 1,
+     "conf": 0.49,
+     "acc": 1.0
+    },
+    {
+     "lo": 0.5,
+     "hi": 0.6,
+     "n": 3,
+     "conf": 0.5233,
+     "acc": 0.3333
+    },
+    {
+     "lo": 0.6,
+     "hi": 0.7,
+     "n": 1,
+     "conf": 0.65,
+     "acc": 1.0
+    },
+    {
+     "lo": 0.7,
+     "hi": 0.8,
+     "n": 1,
+     "conf": 0.71,
+     "acc": 1.0
+    },
+    {
+     "lo": 0.8,
+     "hi": 0.9,
+     "n": 2,
+     "conf": 0.835,
+     "acc": 1.0
+    },
+    {
+     "lo": 0.9,
+     "hi": 1.0,
+     "n": 40,
+     "conf": 0.9735,
+     "acc": 1.0
+    }
+   ],
+   "ece": 0.0648,
+   "brier": 0.0292,
+   "n": 48,
+   "mean_conf": 0.9173
+  },
+  "jev_chunked": {
+   "bins": [
+    {
+     "lo": 0.5,
+     "hi": 0.6,
+     "n": 1,
+     "conf": 0.57,
+     "acc": 0.0
+    },
+    {
+     "lo": 0.6,
+     "hi": 0.7,
+     "n": 1,
+     "conf": 0.65,
+     "acc": 0.0
+    },
+    {
+     "lo": 0.7,
+     "hi": 0.8,
+     "n": 1,
+     "conf": 0.75,
+     "acc": 0.0
+    },
+    {
+     "lo": 0.8,
+     "hi": 0.9,
+     "n": 5,
+     "conf": 0.864,
+     "acc": 0.8
+    },
+    {
+     "lo": 0.9,
+     "hi": 1.0,
+     "n": 40,
+     "conf": 0.9735,
+     "acc": 0.925
+    }
+   ],
+   "ece": 0.0881,
+   "brier": 0.1084,
+   "n": 48,
+   "mean_conf": 0.9423
+  }
+ },
+ "latency": [
+  {
+   "series": "jev",
+   "length": 2000,
+   "calls": 1,
+   "p50": 0.305,
+   "p95": 0.305,
+   "input_tokens": 2912,
+   "output_tokens": 374,
+   "usd_per_1k_decisions": 0.0102
+  },
+  {
+   "series": "jev",
+   "length": 8000,
+   "calls": 1,
+   "p50": 0.296,
+   "p95": 0.296,
+   "input_tokens": 8355,
+   "output_tokens": 377,
+   "usd_per_1k_decisions": 0.0292
+  },
+  {
+   "series": "jev",
+   "length": 16000,
+   "calls": 1,
+   "p50": 0.341,
+   "p95": 0.341,
+   "input_tokens": 15700,
+   "output_tokens": 374,
+   "usd_per_1k_decisions": 0.055
+  },
+  {
+   "series": "jev",
+   "length": 30000,
+   "calls": 1,
+   "p50": 0.447,
+   "p95": 0.447,
+   "input_tokens": 28766,
+   "output_tokens": 374,
+   "usd_per_1k_decisions": 0.1007
+  },
+  {
+   "series": "jev_chunked",
+   "length": 64000,
+   "calls": 1,
+   "p50": 1.195,
+   "p95": 1.195,
+   "input_tokens": 62145,
+   "output_tokens": 1124,
+   "usd_per_1k_decisions": 0.2175
+  },
+  {
+   "series": "jev_chunked",
+   "length": 128000,
+   "calls": 1,
+   "p50": 2.186,
+   "p95": 2.186,
+   "input_tokens": 123858,
+   "output_tokens": 1884,
+   "usd_per_1k_decisions": 0.4335
+  },
+  {
+   "series": "jev_chunked",
+   "length": 256000,
+   "calls": 1,
+   "p50": 4.051,
+   "p95": 4.051,
+   "input_tokens": 246502,
+   "output_tokens": 3368,
+   "usd_per_1k_decisions": 0.8628
+  },
+  {
+   "series": "jev_chunked",
+   "length": 360000,
+   "calls": 1,
+   "p50": 5.843,
+   "p95": 5.843,
+   "input_tokens": 347024,
+   "output_tokens": 4864,
+   "usd_per_1k_decisions": 1.2146
+  },
+  {
+   "series": "subq",
+   "length": 2000,
+   "calls": 1,
+   "p50": 0.821,
+   "p95": 0.821,
+   "input_tokens": 2878,
+   "output_tokens": 0,
+   "usd_per_1k_decisions": 0.0216
+  },
+  {
+   "series": "subq",
+   "length": 8000,
+   "calls": 1,
+   "p50": 1.147,
+   "p95": 1.147,
+   "input_tokens": 8248,
+   "output_tokens": 0,
+   "usd_per_1k_decisions": 0.0619
+  },
+  {
+   "series": "subq",
+   "length": 16000,
+   "calls": 1,
+   "p50": 1.954,
+   "p95": 1.954,
+   "input_tokens": 15550,
+   "output_tokens": 0,
+   "usd_per_1k_decisions": 0.1166
+  },
+  {
+   "series": "subq",
+   "length": 30000,
+   "calls": 1,
+   "p50": 1.351,
+   "p95": 1.351,
+   "input_tokens": 28496,
+   "output_tokens": 0,
+   "usd_per_1k_decisions": 0.2137
+  },
+  {
+   "series": "subq",
+   "length": 64000,
+   "calls": 1,
+   "p50": 1.659,
+   "p95": 1.659,
+   "input_tokens": 60067,
+   "output_tokens": 0,
+   "usd_per_1k_decisions": 0.4505
+  },
+  {
+   "series": "subq",
+   "length": 128000,
+   "calls": 1,
+   "p50": 2.373,
+   "p95": 2.373,
+   "input_tokens": 119325,
+   "output_tokens": 0,
+   "usd_per_1k_decisions": 0.8949
+  },
+  {
+   "series": "subq",
+   "length": 256000,
+   "calls": 1,
+   "p50": 3.606,
+   "p95": 3.606,
+   "input_tokens": 238276,
+   "output_tokens": 0,
+   "usd_per_1k_decisions": 1.7871
+  },
+  {
+   "series": "subq",
+   "length": 360000,
+   "calls": 1,
+   "p50": 4.674,
+   "p95": 4.674,
+   "input_tokens": 334851,
+   "output_tokens": 0,
+   "usd_per_1k_decisions": 2.5114
+  }
+ ],
+ "robustness": {
+  "subq": {
+   "option_shuffle_flip_rate": 0.0,
+   "option_shuffle_n": 4,
+   "paraphrase_flip_rate": 0.0,
+   "paraphrase_mean_spread": 0.0021,
+   "paraphrase_n": 6,
+   "negation_mean_gap": 0.0025,
+   "negation_contradiction_rate": 0.0,
+   "negation_n": 6,
+   "repeat_identical_rate": 1.0,
+   "repeat_same_answer_rate": 1.0,
+   "repeat_n": 12
+  },
+  "jev": {
+   "option_shuffle_flip_rate": 0.25,
+   "option_shuffle_n": 4,
+   "paraphrase_flip_rate": 0.0,
+   "paraphrase_mean_spread": 0.095,
+   "paraphrase_n": 6,
+   "negation_mean_gap": 0.0317,
+   "negation_contradiction_rate": 0.0,
+   "negation_n": 6,
+   "repeat_identical_rate": 0.4167,
+   "repeat_same_answer_rate": 0.9167,
+   "repeat_n": 12
+  }
+ },
+ "errors": [
+  {
+   "model": "jev",
+   "task": "main",
+   "length": 64000,
+   "type": "max_tokens_exceeded",
+   "count": 1
+  },
+  {
+   "model": "jev",
+   "task": "main",
+   "length": 128000,
+   "type": "max_tokens_exceeded",
+   "count": 1
+  },
+  {
+   "model": "jev",
+   "task": "main",
+   "length": 256000,
+   "type": "max_tokens_exceeded",
+   "count": 1
+  },
+  {
+   "model": "jev",
+   "task": "main",
+   "length": 360000,
+   "type": "max_tokens_exceeded",
+   "count": 1
+  }
+ ],
+ "examples": [
+  {
+   "case": "002K-00",
+   "state_head": "Kettle & Co. online store - event log. One event per line, in chronological order.\n2026-01-09 19:39  TICKET         customer=C-2417 severity=critical topic=product\n2026-01-20 21:18  TICKET         customer=C-2417 severity=medium topic=product\n2026-02-03 12:02  ORDER_PLACED   order=#11050 customer=C-5813 warehouse=Lyon total=€215.64\n2026-02-04 14:02  SHIPPED        order=#11050 warehouse=Lyon\n2026-02-05 13:50  ORDER_PLACED   order=#86138 customer=C-2417 warehouse=Lyon total=€209.76\n2026-02-05 13:59  ORDER_PLACED   order=#17889 customer=C-9658 warehouse=Bilbao total=€96.50\n2026-02-06 03:45  SHIPPED        order=#17889 warehouse=Bilbao\n2026-02-06 21:29  SHIPPED        order=#86138 warehouse=Lyon\n2026-02-07 07:15  DELIVERED      order=#17889\n2026-02-08 03:34  ORDER_PLACED   order=#11089 customer=C-3671 warehouse=Bilbao total=€236.02\n2026-02-08 05:30  DELIVERED      order=#11050\n2026-02-08 17:57  SHIPPED        order=#11089 warehouse=Bilbao\n2026-02-09 21:49  DELIVERED      order=#11089\n2026-02-10 00:44  DELIVERED      order=#86138\n2026-02-12 16:51  RETURNED       order=#17889 reason=late\n2026-02-14 04:02  REFUND         order=#17889 amount=€77.20\n2026-05-30 06:57  TICKET         customer=C-2417 severity=critical topic=account\n2026-06-13 00:12  ORDER_PLACED   order=#88581 customer=C-9566 warehouse=Gdansk total=€102.92\n2026-06-14 09:28  SHIPPED        order=#88581 warehouse=Gdansk\n202",
+   "questions": {
+    "l1_a": {
+     "type": "noul",
+     "instructions": "Was order #11089 returned?"
+    },
+    "l1_b": {
+     "type": "noul",
+     "instructions": "Was order #87656 returned?"
+    },
+    "l2_a": {
+     "type": "choice",
+     "instructions": "Which warehouse shipped order #54971?",
+     "criteria": {
+      "Bilbao": null,
+      "Gdansk": null,
+      "Leeds": null,
+      "Lyon": null,
+      "Porto": null
+     }
+    },
+    "l2_b": {
+     "type": "choice",
+     "instructions": "Which warehouse shipped order #11050?",
+     "criteria": {
+      "Bilbao": null,
+      "Gdansk": null,
+      "Leeds": null,
+      "Lyon": null,
+      "Porto": null
+     }
+    },
+    "x1_a": {
+     "type": "noul",
+     "instructions": "Did customer C-9566 place an order after their account was closed?"
+    },
+    "x1_b": {
+     "type": "noul",
+     "instructions": "Did customer C-5300 place an order after their account was closed?"
+    },
+    "x2_a": {
+     "type": "noul",
+     "instructions": "Was order #17889 refunded an amount different from its order total?"
+    },
+    "x2_b": {
+     "type": "noul",
+     "instructions": "Was order #60004 refunded an amount different from its order total?"
+    },
+    "a1_ship": {
+     "type": "choice",
+     "instructions": "Across the whole log, which warehouse shipped the most orders?",
+     "criteria": {
+      "Bilbao": null,
+      "Gdansk": null,
+      "Leeds": null,
+      "Lyon": null,
+      "Porto": null
+     }
+    },
+    "a1_ret": {
+     "type": "choice",
+     "instructions": "Across the whole log, which warehouse had the most returned orders?",
+     "criteria": {
+      "Bilbao": null,
+      "Gdansk": null,
+      "Leeds": null,
+      "Lyon": null,
+      "Porto": null
+     }
+    },
+    "a2_a": {
+     "type": "score",
+     "instructions": "How many tickets with severity=critical did customer C-3123 open?",
+     "criteria": [
+      "None",
+      "One",
+      "Two or three",
+      "Four or more"
+     ]
+    },
+    "a2_b": {
+     "type": "score",
+     "instructions": "How many tickets with severity=critical did customer C-2417 open?",
+     "criteria": [
+      "None",
+      "One",
+      "Two or three",
+      "Four or more"
+     ]
+    }
+   },
+   "truth": {
+    "l1_a": false,
+    "l1_b": true,
+    "l2_a": "Lyon",
+    "l2_b": "Lyon",
+    "x1_a": true,
+    "x1_b": false,
+    "x2_a": true,
+    "x2_b": false,
+    "a1_ship": "Lyon",
+    "a1_ret": "Lyon",
+    "a2_a": 0,
+    "a2_b": 2
+   },
+   "answers": {
+    "jev": {
+     "l1_a": {
+      "correct": true,
+      "conf": 0.98,
+      "p": 0.02
+     },
+     "l1_b": {
+      "correct": true,
+      "conf": 0.96,
+      "p": 0.96
+     },
+     "l2_a": {
+      "correct": true,
+      "conf": 1.0,
+      "choice": "Lyon"
+     },
+     "l2_b": {
+      "correct": true,
+      "conf": 1.0,
+      "choice": "Lyon"
+     },
+     "x1_a": {
+      "correct": true,
+      "conf": 0.9,
+      "p": 0.9
+     },
+     "x1_b": {
+      "correct": true,
+      "conf": 0.94,
+      "p": 0.06
+     },
+     "x2_a": {
+      "correct": true,
+      "conf": 0.97,
+      "p": 0.97
+     },
+     "x2_b": {
+      "correct": true,
+      "conf": 0.98,
+      "p": 0.02
+     },
+     "a1_ship": {
+      "correct": true,
+      "conf": 0.99,
+      "choice": "Lyon"
+     },
+     "a1_ret": {
+      "correct": true,
+      "conf": 0.71,
+      "choice": "Lyon"
+     },
+     "a2_a": {
+      "correct": true,
+      "conf": 1.0,
+      "level": 0
+     },
+     "a2_b": {
+      "correct": true,
+      "conf": 1.0,
+      "level": 2
+     }
+    },
+    "subq": {
+     "l1_a": {
+      "correct": true,
+      "conf": 0.9888686332851648,
+      "p": 0.011131366714835167
+     },
+     "l1_b": {
+      "correct": true,
+      "conf": 0.9867549538612366,
+      "p": 0.9867549538612366
+     },
+     "l2_a": {
+      "correct": true,
+      "conf": 0.9810857772827148,
+      "choice": "Lyon"
+     },
+     "l2_b": {
+      "correct": true,
+      "conf": 0.9795981049537659,
+      "choice": "Lyon"
+     },
+     "x1_a": {
+      "correct": true,
+      "conf": 0.970589816570282,
+      "p": 0.970589816570282
+     },
+     "x1_b": {
+      "correct": true,
+      "conf": 0.9771950673311949,
+      "p": 0.022804932668805122
+     },
+     "x2_a": {
+      "correct": true,
+      "conf": 0.9728966951370239,
+      "p": 0.9728966951370239
+     },
+     "x2_b": {
+      "correct": true,
+      "conf": 0.9779786448925734,
+      "p": 0.022021355107426643
+     },
+     "a1_ship": {
+      "correct": true,
+      "conf": 0.9598408937454224,
+      "choice": "Lyon"
+     },
+     "a1_ret": {
+      "correct": true,
+      "conf": 0.9326967000961304,
+      "choice": "Lyon"
+     },
+     "a2_a": {
+      "correct": true,
+      "conf": 0.9790200591087341,
+      "level": 0
+     },
+     "a2_b": {
+      "correct": true,
+      "conf": 0.968058705329895,
+      "level": 2
+     }
+    },
+    "jev_chunked": {}
+   }
+  }
+ ]
+}

@@ -1,0 +1,52 @@
+002K-00 main        jev    0.31s 2912 tok
+002K-00 main        subq   0.82s 2878 tok
+008K-00 main        subq   1.15s 8248 tok
+008K-00 main        jev    0.30s 8355 tok
+008K-00 robust      jev    0.32s 9157 tok
+008K-00 robust      subq   2.14s 9628 tok
+008K-00 repeat1     subq   1.03s 8248 tok
+008K-00 repeat1     jev    0.30s 8355 tok
+008K-00 repeat2     jev    0.30s 8355 tok
+008K-00 repeat2     subq   1.63s 8248 tok
+016K-00 main        subq   1.95s 15550 tok
+016K-00 main        jev    0.34s 15700 tok
+030K-00 main        jev    0.45s 28766 tok
+030K-00 main        subq   1.35s 28496 tok
+064K-00 main        subq   1.66s 60067 tok
+064K-00 main        jev    0.34s {"detail":{"error_type":"max_tokens_exceeded"}}
+064K-00 chunked   0 jev    0.47s 27826 tok
+064K-00 chunked   1 jev    0.44s 27919 tok
+064K-00 chunked   2 jev    0.29s 6400 tok
+128K-00 main        subq   2.37s 119325 tok
+128K-00 main        jev    0.31s {"detail":{"error_type":"max_tokens_exceeded"}}
+128K-00 chunked   0 jev    0.44s 27851 tok
+128K-00 chunked   1 jev    0.46s 27973 tok
+128K-00 chunked   2 jev    0.52s 27981 tok
+128K-00 chunked   3 jev    0.44s 27925 tok
+128K-00 chunked   4 jev    0.32s 12128 tok
+256K-00 main        subq   3.61s 238276 tok
+256K-00 main        jev    0.86s {"detail":{"error_type":"max_tokens_exceeded"}}
+256K-00 chunked   0 jev    0.42s 27873 tok
+256K-00 chunked   1 jev    0.42s 27936 tok
+256K-00 chunked   2 jev    0.41s 27885 tok
+256K-00 chunked   3 jev    0.47s 27935 tok
+256K-00 chunked   4 jev    0.46s 27819 tok
+256K-00 chunked   5 jev    0.48s 27895 tok
+256K-00 chunked   6 jev    0.46s 27936 tok
+256K-00 chunked   7 jev    0.45s 27887 tok
+256K-00 chunked   8 jev    0.47s 23336 tok
+360K-00 main        subq   4.67s 334851 tok
+360K-00 main        jev    0.52s {"detail":{"error_type":"max_tokens_exceeded"}}
+360K-00 chunked   0 jev    0.45s 27845 tok
+360K-00 chunked   1 jev    0.45s 27902 tok
+360K-00 chunked   2 jev    0.46s 27962 tok
+360K-00 chunked   3 jev    0.47s 27900 tok
+360K-00 chunked   4 jev    0.48s 27799 tok
+360K-00 chunked   5 jev    0.45s 27947 tok
+360K-00 chunked   6 jev    0.49s 27858 tok
+360K-00 chunked   7 jev    0.47s 27944 tok
+360K-00 chunked   8 jev    0.42s 27831 tok
+360K-00 chunked   9 jev    0.45s 27963 tok
+360K-00 chunked  10 jev    0.47s 27897 tok
+360K-00 chunked  11 jev    0.45s 27904 tok
+360K-00 chunked  12 jev    0.33s 12272 tok
