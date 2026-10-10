@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SubQ Snap vs Jev</title>
+<meta name="description" content="Two decision models, one fictional store, 1,920 graded answers from 2K to 360K tokens of context.">
+<meta property="og:title" content="SubQ Snap vs Jev">
+<meta property="og:description" content="Two decision models, one fictional store, 1,920 graded answers from 2K to 360K tokens of context.">
+<meta property="og:image" content="https://jcarlosrodicio.github.io/subq-vs-jev/og.png">
+<meta property="og:url" content="https://jcarlosrodicio.github.io/subq-vs-jev/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' fill='%231b1a17'/><path d='M3 4h10M3 7h7M3 10h9M3 13h5' stroke='%23f3eee4' stroke-width='1.4'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar">
+  <span class="mark">subq-vs-jev</span>
+  <nav>
+    <a href="https://github.com/jcarlosrodicio/subq-vs-jev" data-i18n="repo"></a>
+    <button id="lang" type="button" aria-label="Language"></button>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-text">
+      <h1 data-i18n="title"></h1>
+      <p class="lede" data-i18n="lede"></p>
+    </div>
+
+    <div class="paper ticket" id="hero-ticket">
+      <div class="ticket-head" data-i18n="hero_log"></div>
+      <pre class="log" id="hero-log" aria-live="off"></pre>
+      <div class="ticket-q">
+        <span class="label" data-i18n="hero_q"></span>
+        <p class="q mono" id="hero-q"></p>
+      </div>
+      <div class="meters" id="hero-meters"></div>
+      <div class="ticket-foot">
+        <span data-i18n="hero_truth"></span>
+        <span class="muted" data-i18n="hero_note"></span>
+      </div>
+    </div>
+
+    <div class="paper receipt" id="receipt">
+      <div class="receipt-head">
+        <span data-i18n="receipt_title"></span>
+        <span class="cols mono"><span class="c-subq">SubQ</span><span class="c-jev">Jev</span></span>
+      </div>
+      <ol id="receipt-lines"></ol>
+      <p class="receipt-foot" data-i18n="r_foot"></p>
+    </div>
+  </section>
+
+  <section class="block" id="s1">
+    <h2 data-i18n="s1_title"></h2>
+    <p class="prose" data-i18n="s1_p"></p>
+    <div class="tape" id="tape">
+      <div class="tape-caption"><span data-i18n="s1_tape"></span><span class="tape-key"><i class="k-window"></i><span data-i18n="s1_window"></span><i class="k-cut"></i><span data-i18n="s1_cut"></span></span></div>
+      <div id="tape-rows"></div>
+    </div>
+    <figure class="chart" id="acc-chart"></figure>
+    <div class="legend" id="acc-legend"></div>
+    <p class="finding" data-i18n="s1_finding"></p>
+    <div class="readout" id="readout">
+      <div class="sizes" id="sizes" role="tablist"></div>
+      <p class="muted small" data-i18n="s1_hint"></p>
+      <div id="readout-body"></div>
+    </div>
+  </section>
+
+  <section class="block" id="s2">
+    <h2 data-i18n="s2_title"></h2>
+    <p class="prose" data-i18n="s2_p"></p>
+    <div class="grids" id="grids"></div>
+    <p class="finding" data-i18n="s2_finding"></p>
+    <p class="depth" id="depth"></p>
+  </section>
+
+  <section class="block" id="s3">
+    <h2 data-i18n="s3_title"></h2>
+    <p class="prose" data-i18n="s3_p"></p>
+    <div class="sizes" id="cal-scope"></div>
+    <div class="calib" id="calib"></div>
+    <p class="finding" data-i18n="s3_finding"></p>
+  </section>
+
+  <section class="block" id="s4">
+    <h2 data-i18n="s4_title"></h2>
+    <p class="prose" data-i18n="s4_p"></p>
+    <div class="robust" id="robust"></div>
+    <p class="finding" data-i18n="s4_finding"></p>
+  </section>
+
+  <section class="block" id="s5">
+    <h2 data-i18n="s5_title"></h2>
+    <p class="prose" data-i18n="s5_p"></p>
+    <div class="sizes" id="race-sizes"></div>
+    <div class="race" id="race"></div>
+    <div class="cost" id="cost"></div>
+    <p class="muted small" data-i18n="s5_note"></p>
+  </section>
+
+  <section class="block" id="s6">
+    <h2 data-i18n="s6_title"></h2>
+    <ol class="method">
+      <li data-i18n="m1"></li>
+      <li data-i18n="m2"></li>
+      <li data-i18n="m3"></li>
+      <li data-i18n="m4"></li>
+      <li data-i18n="m5"></li>
+      <li data-i18n="m6"></li>
+    </ol>
+    <h3 data-i18n="reproduce"></h3>
+    <pre class="code"><code>git clone https://github.com/jcarlosrodicio/subq-vs-jev
+cd subq-vs-jev
+python3 -m unittest tests/test_truth.py
+export SUBQ_API_KEY=... JEV_API_KEY=...
+python3 bench/run.py
+python3 bench/analyze.py</code></pre>
+  </section>
+</main>
+
+<footer class="foot">
+  <p data-i18n="footer"></p>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

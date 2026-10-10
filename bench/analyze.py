@@ -140,11 +140,7 @@ def main():
             if items:
                 depth.append({"series": s, "depth": d, **acc_block(items)})
 
-    calibration = {}
-    for s in series:
-        items = [i for i in graded if i["series"] == s]
-        if not items:
-            continue
+    def calib(items):
         bins = []
         for b in range(10):
             lo, hi = b / 10, (b + 1) / 10
@@ -154,8 +150,13 @@ def main():
                              "acc": round(sum(i["correct"] for i in inb) / len(inb), 4)})
         ece = sum(b["n"] * abs(b["conf"] - b["acc"]) for b in bins) / len(items)
         brier = statistics.mean((i["conf"] - i["correct"]) ** 2 for i in items)
-        calibration[s] = {"bins": bins, "ece": round(ece, 4), "brier": round(brier, 4), "n": len(items),
-                          "mean_conf": round(statistics.mean(i["conf"] for i in items), 4)}
+        return {"bins": bins, "ece": round(ece, 4), "brier": round(brier, 4), "n": len(items),
+                "mean_conf": round(statistics.mean(i["conf"] for i in items), 4)}
+
+    # "shared": only the sizes both models read in one call, so the comparison is like for like.
+    calibration = {"shared": {s: calib([i for i in graded if i["series"] == s and i["length"] in shared]) for s in ["subq", "jev"]},
+                   "long": {s: calib([i for i in graded if i["series"] == s and i["length"] not in shared]) for s in ["subq", "jev_chunked"]},
+                   "all": {s: calib([i for i in graded if i["series"] == s]) for s in series}}
 
     latency = []
     for (s, length), cs in sorted(calls.items(), key=lambda kv: (kv[0][0], kv[0][1])):
@@ -209,15 +210,13 @@ def main():
             "repeat_identical_rate": rate(c4_identical), "repeat_same_answer_rate": rate(c4_same), "repeat_n": len(c4_identical),
         }
 
-    examples = []
-    for case_id in sorted({i["case"] for i in graded if i["length"] == 2_000})[:1]:
-        case = cases[case_id]
-        examples.append({"case": case_id, "state_head": case["state"][:1400], "questions": case["questions"],
-                         "truth": {k: v["answer"] for k, v in case["truth"].items()},
-                         "answers": {i["series"]: {} for i in graded}})
-        for i in graded:
-            if i["case"] == case_id:
-                examples[-1]["answers"][i["series"]][i["q"]] = {k: i[k] for k in ("correct", "conf", "p", "choice", "level") if k in i}
+    # Hero example for the site: a "yes" lookup from the first 2K log, with the log lines that answer it.
+    case = cases["002K-00"]
+    name = next(k for k, t in case["truth"].items() if t["family"] == "L1" and t["answer"])
+    order = f"#{case['truth'][name]['ctx']['o']}"
+    hero = {"case": case["id"], "question": case["questions"][name]["instructions"], "truth": True,
+            "lines": [l for l in case["state"].splitlines() if f"order={order} " in l + " "],
+            "answers": {i["series"]: i["p"] for i in graded if i["case"] == case["id"] and i["q"] == name}}
 
     out = {
         "meta": {"generated_from": str(Path(args.raw).resolve().relative_to(ROOT)), "first_call": min(r["at"] for r in rows), "last_call": max(r["at"] for r in rows),
@@ -227,7 +226,7 @@ def main():
         "head_to_head": head_to_head, "by_length": by_length, "depth": depth, "calibration": calibration,
         "latency": latency, "robustness": robustness,
         "errors": [{"model": m, "task": t, "length": l, "type": e, "count": c} for (m, t, l, e), c in sorted(errors.items())],
-        "examples": examples,
+        "hero": hero,
     }
     Path(args.out).parent.mkdir(parents=True, exist_ok=True)
     Path(args.out).write_text(json.dumps(out, indent=1, ensure_ascii=False))
@@ -237,7 +236,7 @@ def main():
         fams = " ".join(f"{f}={row['families'][f]['acc']:.2f}" for f in FAMILIES if row["families"][f]["n"])
         print(f"  {row['series']:<12} {row['length']:>7}  {row['acc']:.3f} (n={row['n']})  {fams}")
     print("head to head <=30K", {s: v["overall"]["acc"] for s, v in head_to_head.items()})
-    print("calibration", {s: (v["ece"], v["brier"]) for s, v in calibration.items()})
+    print("calibration", {sc: {s: (v["ece"], v["brier"]) for s, v in c.items()} for sc, c in calibration.items()})
     print("latency", [(l["series"], l["length"], l["p50"]) for l in latency])
     print("robustness", json.dumps(robustness, indent=1))
     print("errors", out["errors"])

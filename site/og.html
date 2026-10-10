@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<title>SubQ Snap vs Jev — preview card</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  body { width: 1200px; height: 630px; overflow: hidden; margin: 0; }
+  .card { display: grid; grid-template-columns: 470px 1fr; gap: 40px; padding: 56px 60px; height: 630px; box-sizing: border-box; }
+  h1 { font-size: 64px; margin: 0 0 22px; }
+  .sub { font-size: 22px; line-height: 1.45; color: var(--ink-2); margin: 0 0 28px; }
+  .totals { font: 500 19px var(--mono); display: grid; gap: 10px; }
+  .totals div { display: grid; grid-template-columns: 1fr 90px 90px; gap: 10px; }
+  .totals span:not(:first-child) { text-align: right; }
+  .url { position: absolute; left: 60px; bottom: 34px; font: 500 16px var(--mono); color: var(--ink-3); }
+  #chart svg { width: 100%; height: auto; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div>
+    <h1>SubQ Snap vs Jev</h1>
+    <p class="sub">Two decision models, one fictional store, 1,920 graded answers from 2K to 360K tokens of context.</p>
+    <div class="totals" id="totals"></div>
+  </div>
+  <div id="chart"></div>
+</div>
+<div class="url">jcarlosrodicio.github.io/subq-vs-jev</div>
+<script>
+fetch("data/results.json").then((r) => r.json()).then((d) => {
+  const row = (s, l) => d.by_length.find((r) => r.series === s && r.length === l);
+  const p = (x) => (x * 100).toFixed(1) + "%";
+  const lines = [["", "SubQ", "Jev"],
+    ["≤30K", p(d.head_to_head.subq.overall.acc), p(d.head_to_head.jev.overall.acc)],
+    ["360K", p(row("subq", 360000).acc), p(row("jev_chunked", 360000).acc) + "*"]];
+  document.getElementById("totals").innerHTML = lines.map((l, i) =>
+    `<div${i === 0 ? ' style="color:var(--ink-3);font-size:15px"' : ""}><span>${l[0]}</span><span class="c-subq">${l[1]}</span><span class="c-jev">${l[2]}</span></div>`).join("") +
+    '<div style="color:var(--ink-3);font-size:14px;font-weight:400"><span>* Jev reading 29K chunks</span></div>';
+  const L = d.meta.lengths, W = 600, H = 470, m = { l: 46, r: 70, t: 20, b: 36 };
+  const x = (l) => m.l + (Math.log(l) - Math.log(L[0])) / (Math.log(L.at(-1)) - Math.log(L[0])) * (W - m.l - m.r);
+  const y = (a) => m.t + (1 - (a - 0.4) / 0.6) * (H - m.t - m.b);
+  const path = (pts) => "M" + pts.map((r) => `${x(r.length)},${y(r.acc)}`).join("L");
+  const subq = L.map((l) => row("subq", l)), jev = L.filter((l) => l <= 30000).map((l) => row("jev", l));
+  const jc = [row("jev", 30000), ...L.filter((l) => l > 30000).map((l) => row("jev_chunked", l))];
+  let s = `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg">`;
+  s += `<rect x="${m.l}" y="${m.t}" width="${x(32768) - m.l}" height="${H - m.t - m.b}" class="band"/>`;
+  for (const a of [0.4, 0.6, 0.8, 1]) s += `<line class="gridline" x1="${m.l}" x2="${W - m.r}" y1="${y(a)}" y2="${y(a)}"/><text class="lbl" style="font-size:14px" x="${m.l - 8}" y="${y(a) + 5}" text-anchor="end">${a * 100}%</text>`;
+  for (const l of [2000, 8000, 30000, 128000, 360000]) s += `<text class="lbl" style="font-size:14px" x="${x(l)}" y="${H - 8}" text-anchor="middle">${l / 1000}K</text>`;
+  s += `<path class="series" stroke="var(--subq)" d="${path(subq)}"/><path class="series" stroke="var(--jev)" d="${path(jev)}"/><path class="series" stroke="var(--jev)" stroke-dasharray="6 5" d="${path(jc)}"/>`;
+  for (const r of subq) s += `<circle cx="${x(r.length)}" cy="${y(r.acc)}" r="5" fill="var(--subq)"/>`;
+  for (const r of jev) s += `<circle cx="${x(r.length)}" cy="${y(r.acc)}" r="5" fill="var(--jev)"/>`;
+  for (const r of jc.slice(1)) s += `<circle cx="${x(r.length)}" cy="${y(r.acc)}" r="5" fill="var(--paper)" stroke="var(--jev)" stroke-width="2"/>`;
+  s += `<text class="lbl" style="font-size:14px;fill:var(--jev)" x="${m.l + 8}" y="${H - m.b - 10}">Jev's window · 32.7K</text></svg>`;
+  document.getElementById("chart").innerHTML = s;
+  document.body.dataset.ready = "1";
+});
+</script>
+</body>
+</html>
