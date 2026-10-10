@@ -10,7 +10,7 @@
     const q = new URLSearchParams(location.search).get("lang");
     if (q && I18N[q]) return q;
     try { const s = localStorage.getItem("lang"); if (s && I18N[s]) return s; } catch (e) {}
-    return (navigator.language || "en").toLowerCase().startsWith("es") ? "es" : "en";
+    return "en";
   })();
   const T = () => I18N[lang];
 
