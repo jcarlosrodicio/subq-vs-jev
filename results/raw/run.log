@@ -1,520 +1,1160 @@
 002K-00 main        jev    0.31s 2912 tok
-002K-00 main        subq   0.82s 2878 tok
-002K-01 main        subq   0.86s 3057 tok
-002K-01 main        jev    0.28s 3113 tok
-002K-02 main        jev    0.25s 2942 tok
-002K-02 main        subq   0.80s 2911 tok
-002K-03 main        subq   0.87s 3020 tok
-002K-03 main        jev    0.27s 3061 tok
-002K-04 main        jev    0.31s 2916 tok
-002K-04 main        subq   0.78s 2886 tok
-002K-05 main        subq   0.80s 2977 tok
-002K-05 main        jev    0.26s 3021 tok
-002K-06 main        jev    0.26s 2948 tok
-002K-06 main        subq   0.83s 2911 tok
-002K-07 main        subq   0.82s 3022 tok
-002K-07 main        jev    0.26s 3063 tok
-002K-08 main        jev    0.26s 2948 tok
-002K-08 main        subq   0.82s 2911 tok
-002K-09 main        subq   0.85s 3048 tok
+002K-00 main        subq   0.74s 2878 tok
+002K-01 main        subq   0.78s 3057 tok
+002K-01 main        jev    0.30s 3113 tok
+002K-02 main        jev    0.29s 2942 tok
+002K-02 main        subq   0.72s 2911 tok
+002K-03 main        subq   0.82s 3020 tok
+002K-03 main        jev    0.31s 3061 tok
+002K-04 main        jev    0.29s 2916 tok
+002K-04 main        subq   0.71s 2886 tok
+002K-05 main        subq   0.79s 2977 tok
+002K-05 main        jev    0.27s 3021 tok
+002K-06 main        jev    0.29s 2948 tok
+002K-06 main        subq   0.74s 2911 tok
+002K-07 main        subq   0.77s 3022 tok
+002K-07 main        jev    0.28s 3063 tok
+002K-08 main        jev    0.27s 2948 tok
+002K-08 main        subq   0.72s 2911 tok
+002K-09 main        subq   0.79s 3048 tok
 002K-09 main        jev    0.28s 3095 tok
-008K-00 main        jev    0.30s 8355 tok
-008K-00 main        subq   1.01s 8248 tok
-008K-00 robust      subq   2.13s 9628 tok
-008K-00 robust      jev    0.30s 9157 tok
-008K-00 repeat1     jev    0.30s 8355 tok
-008K-00 repeat1     subq   1.09s 8248 tok
-008K-00 repeat2     subq   1.01s 8248 tok
-008K-00 repeat2     jev    0.33s 8355 tok
-008K-01 main        jev    0.30s 8234 tok
-008K-01 main        subq   0.99s 8140 tok
-008K-01 robust      subq   2.02s 9520 tok
-008K-01 robust      jev    0.32s 9036 tok
-008K-01 repeat1     jev    0.30s 8234 tok
-008K-01 repeat1     subq   0.98s 8140 tok
-008K-01 repeat2     subq   1.00s 8140 tok
-008K-01 repeat2     jev    0.32s 8234 tok
+002K-10 main        jev    0.25s 2923 tok
+002K-10 main        subq   0.75s 2884 tok
+002K-11 main        subq   0.80s 3014 tok
+002K-11 main        jev    0.35s 3060 tok
+002K-12 main        jev    0.27s 2970 tok
+002K-12 main        subq   0.80s 2931 tok
+002K-13 main        subq   0.92s 2989 tok
+002K-13 main        jev    0.30s 3033 tok
+002K-14 main        jev    0.31s 2992 tok
+002K-14 main        subq   1.13s 2952 tok
+002K-15 main        subq   0.99s 3028 tok
+002K-15 main        jev    0.26s 3067 tok
+002K-16 main        jev    0.26s 2987 tok
+002K-16 main        subq   0.97s 2953 tok
+002K-17 main        subq   1.34s 3014 tok
+002K-17 main        jev    0.27s 3057 tok
+002K-18 main        jev    0.27s 2954 tok
+002K-18 main        subq   0.81s 2917 tok
+002K-19 main        subq   0.84s 3090 tok
+002K-19 main        jev    0.27s 3140 tok
+008K-00 main        jev    0.31s 8355 tok
+008K-00 main        subq   0.75s 8248 tok
+008K-00 robust      subq   0.47s {"detail":{"error_type":"validation_error","message":"questions: must NOT have m
+008K-00 robust      jev    0.32s 9157 tok
+008K-00 repeat1     jev    0.32s 8355 tok
+008K-00 repeat1     subq   0.74s 8248 tok
+008K-00 repeat2     subq   0.66s 8248 tok
+008K-00 repeat2     jev    0.35s 8355 tok
+008K-01 main        jev    0.29s 8234 tok
+008K-01 main        subq   0.76s 8140 tok
+008K-01 robust      subq   0.37s {"detail":{"error_type":"validation_error","message":"questions: must NOT have m
+008K-01 robust      jev    0.33s 9036 tok
+008K-01 repeat1     jev    0.34s 8234 tok
+008K-01 repeat1     subq   0.91s 8140 tok
+008K-01 repeat2     subq   0.68s 8140 tok
+008K-01 repeat2     jev    0.31s 8234 tok
 008K-02 main        jev    0.30s 8233 tok
-008K-02 main        subq   1.57s 8151 tok
-008K-02 robust      subq   2.16s 9531 tok
-008K-02 robust      jev    0.30s 9035 tok
-008K-02 repeat1     jev    0.29s 8233 tok
-008K-02 repeat1     subq   0.98s 8151 tok
-008K-02 repeat2     subq   1.08s 8151 tok
-008K-02 repeat2     jev    0.32s 8233 tok
-008K-03 main        jev    0.32s 8213 tok
-008K-03 main        subq   0.99s 8106 tok
-008K-03 robust      subq   2.10s 9486 tok
-008K-03 robust      jev    0.30s 9015 tok
-008K-03 repeat1     jev    0.32s 8213 tok
-008K-03 repeat1     subq   1.00s 8106 tok
-008K-03 repeat2     subq   1.09s 8106 tok
+008K-02 main        subq   0.77s 8151 tok
+008K-02 robust      subq   0.44s {"detail":{"error_type":"validation_error","message":"questions: must NOT have m
+008K-02 robust      jev    0.38s 9035 tok
+008K-02 repeat1     jev    0.33s 8233 tok
+008K-02 repeat1     subq   0.65s 8151 tok
+008K-02 repeat2     subq   0.64s 8151 tok
+008K-02 repeat2     jev    0.33s 8233 tok
+008K-03 main        jev    0.37s 8213 tok
+008K-03 main        subq   0.75s 8106 tok
+008K-03 robust      subq   0.45s {"detail":{"error_type":"validation_error","message":"questions: must NOT have m
+008K-03 robust      jev    0.32s 9015 tok
+008K-03 repeat1     jev    0.29s 8213 tok
+008K-03 repeat1     subq   0.65s 8106 tok
+008K-03 repeat2     subq   0.70s 8106 tok
 008K-03 repeat2     jev    0.30s 8213 tok
-008K-04 main        jev    0.38s 8369 tok
-008K-04 main        subq   1.02s 8290 tok
-008K-04 robust      subq   2.15s 9670 tok
-008K-04 robust      jev    0.32s 9171 tok
-008K-04 repeat1     jev    0.30s 8369 tok
-008K-04 repeat1     subq   1.00s 8290 tok
-008K-04 repeat2     subq   1.01s 8290 tok
-008K-04 repeat2     jev    0.29s 8369 tok
-008K-05 main        jev    0.30s 8247 tok
-008K-05 main        subq   1.03s 8116 tok
-008K-05 robust      subq   2.16s 9496 tok
+008K-04 main        jev    0.37s 8369 tok
+008K-04 main        subq   0.75s 8290 tok
+008K-04 robust      subq   0.46s {"detail":{"error_type":"validation_error","message":"questions: must NOT have m
+008K-04 robust      jev    0.34s 9171 tok
+008K-04 repeat1     jev    0.33s 8369 tok
+008K-04 repeat1     subq   0.74s 8290 tok
+008K-04 repeat2     subq   0.67s 8290 tok
+008K-04 repeat2     jev    0.34s 8369 tok
+008K-05 main        jev    0.31s 8247 tok
+008K-05 main        subq   0.76s 8116 tok
+008K-05 robust      subq   0.44s {"detail":{"error_type":"validation_error","message":"questions: must NOT have m
 008K-05 robust      jev    0.31s 9049 tok
-008K-05 repeat1     jev    0.47s 8247 tok
-008K-05 repeat1     subq   0.97s 8116 tok
-008K-05 repeat2     subq   1.01s 8116 tok
-008K-05 repeat2     jev    0.30s 8247 tok
-008K-06 main        jev    0.31s 8230 tok
-008K-06 main        subq   0.98s 8151 tok
-008K-06 robust      subq   2.08s 9531 tok
+008K-05 repeat1     jev    0.33s 8247 tok
+008K-05 repeat1     subq   0.66s 8116 tok
+008K-05 repeat2     subq   0.67s 8116 tok
+008K-05 repeat2     jev    0.31s 8247 tok
+008K-06 main        jev    0.30s 8230 tok
+008K-06 main        subq   0.82s 8151 tok
+008K-06 robust      subq   0.44s {"detail":{"error_type":"validation_error","message":"questions: must NOT have m
 008K-06 robust      jev    0.34s 9032 tok
-008K-06 repeat1     jev    0.30s 8230 tok
-008K-06 repeat1     subq   0.99s 8151 tok
-008K-06 repeat2     subq   1.01s 8151 tok
-008K-06 repeat2     jev    0.31s 8230 tok
-008K-07 main        jev    0.30s 8152 tok
-008K-07 main        subq   0.98s 8063 tok
-008K-07 robust      subq   2.06s 9443 tok
+008K-06 repeat1     jev    0.29s 8230 tok
+008K-06 repeat1     subq   0.63s 8151 tok
+008K-06 repeat2     subq   0.66s 8151 tok
+008K-06 repeat2     jev    0.29s 8230 tok
+008K-07 main        jev    0.31s 8152 tok
+008K-07 main        subq   0.74s 8063 tok
+008K-07 robust      subq   0.37s {"detail":{"error_type":"validation_error","message":"questions: must NOT have m
 008K-07 robust      jev    0.33s 8954 tok
-008K-07 repeat1     jev    0.34s 8152 tok
-008K-07 repeat1     subq   1.00s 8063 tok
-008K-07 repeat2     subq   1.07s 8063 tok
-008K-07 repeat2     jev    0.30s 8152 tok
-008K-08 main        jev    0.30s 8213 tok
-008K-08 main        subq   1.00s 8130 tok
-008K-08 robust      subq   2.11s 9510 tok
+008K-07 repeat1     jev    0.31s 8152 tok
+008K-07 repeat1     subq   0.65s 8063 tok
+008K-07 repeat2     subq   0.66s 8063 tok
+008K-07 repeat2     jev    0.31s 8152 tok
+008K-08 main        jev    0.31s 8213 tok
+008K-08 main        subq   0.78s 8130 tok
+008K-08 robust      subq   0.47s {"detail":{"error_type":"validation_error","message":"questions: must NOT have m
 008K-08 robust      jev    0.30s 9015 tok
 008K-08 repeat1     jev    0.30s 8213 tok
-008K-08 repeat1     subq   1.01s 8130 tok
-008K-08 repeat2     subq   0.98s 8130 tok
+008K-08 repeat1     subq   0.67s 8130 tok
+008K-08 repeat2     subq   0.65s 8130 tok
 008K-08 repeat2     jev    0.31s 8213 tok
-008K-09 main        jev    0.29s 8156 tok
-008K-09 main        subq   1.01s 8049 tok
-008K-09 robust      subq   2.11s 9429 tok
-008K-09 robust      jev    0.33s 8958 tok
-008K-09 repeat1     jev    0.31s 8156 tok
-008K-09 repeat1     subq   1.01s 8049 tok
-008K-09 repeat2     subq   1.07s 8049 tok
-008K-09 repeat2     jev    0.29s 8156 tok
-016K-00 main        jev    0.36s 15700 tok
-016K-00 main        subq   1.93s 15550 tok
-016K-01 main        subq   1.91s 15572 tok
-016K-01 main        jev    0.38s 15726 tok
-016K-02 main        jev    0.34s 15823 tok
-016K-02 main        subq   1.95s 15680 tok
-016K-03 main        subq   2.01s 15660 tok
-016K-03 main        jev    0.34s 15802 tok
-016K-04 main        jev    0.35s 15705 tok
-016K-04 main        subq   1.95s 15525 tok
-016K-05 main        subq   1.88s 15588 tok
+008K-09 main        jev    0.31s 8156 tok
+008K-09 main        subq   0.72s 8049 tok
+008K-09 robust      subq   0.45s {"detail":{"error_type":"validation_error","message":"questions: must NOT have m
+008K-09 robust      jev    0.42s 8958 tok
+008K-09 repeat1     jev    0.30s 8156 tok
+008K-09 repeat1     subq   0.72s 8049 tok
+008K-09 repeat2     subq   0.68s 8049 tok
+008K-09 repeat2     jev    0.32s 8156 tok
+008K-10 main        jev    0.33s 8352 tok
+008K-10 main        subq   0.76s 8273 tok
+008K-10 robust      subq   0.36s {"detail":{"error_type":"validation_error","message":"questions: must NOT have m
+008K-10 robust      jev    0.32s 9154 tok
+008K-10 repeat1     jev    0.32s 8352 tok
+008K-10 repeat1     subq   0.67s 8273 tok
+008K-10 repeat2     subq   0.68s 8273 tok
+008K-10 repeat2     jev    0.30s 8352 tok
+008K-11 main        jev    0.30s 8276 tok
+008K-11 main        subq   0.76s 8162 tok
+008K-11 robust      subq   0.45s {"detail":{"error_type":"validation_error","message":"questions: must NOT have m
+008K-11 robust      jev    0.32s 9078 tok
+008K-11 repeat1     jev    0.29s 8276 tok
+008K-11 repeat1     subq   0.78s 8162 tok
+008K-11 repeat2     subq   0.74s 8162 tok
+008K-11 repeat2     jev    0.28s 8276 tok
+008K-12 main        jev    0.33s 8296 tok
+008K-12 main        subq   0.76s 8207 tok
+008K-12 robust      subq   0.38s {"detail":{"error_type":"validation_error","message":"questions: must NOT have m
+008K-12 robust      jev    0.34s 9098 tok
+008K-12 repeat1     jev    0.30s 8296 tok
+008K-12 repeat1     subq   0.64s 8207 tok
+008K-12 repeat2     subq   0.65s 8207 tok
+008K-12 repeat2     jev    0.32s 8296 tok
+008K-13 main        jev    0.29s 8255 tok
+008K-13 main        subq   0.74s 8175 tok
+008K-13 robust      subq   0.37s {"detail":{"error_type":"validation_error","message":"questions: must NOT have m
+008K-13 robust      jev    0.34s 9057 tok
+008K-13 repeat1     jev    0.34s 8255 tok
+008K-13 repeat1     subq   0.64s 8175 tok
+008K-13 repeat2     subq   0.73s 8175 tok
+008K-13 repeat2     jev    0.32s 8255 tok
+008K-14 main        jev    0.32s 8331 tok
+008K-14 main        subq   0.74s 8229 tok
+008K-14 robust      subq   0.47s {"detail":{"error_type":"validation_error","message":"questions: must NOT have m
+008K-14 robust      jev    0.30s 9133 tok
+008K-14 repeat1     jev    0.32s 8331 tok
+008K-14 repeat1     subq   0.90s 8229 tok
+008K-14 repeat2     subq   0.80s 8229 tok
+008K-14 repeat2     jev    0.31s 8331 tok
+008K-15 main        jev    0.30s 8230 tok
+008K-15 main        subq   0.74s 8129 tok
+008K-15 robust      subq   0.46s {"detail":{"error_type":"validation_error","message":"questions: must NOT have m
+008K-15 robust      jev    0.33s 9032 tok
+008K-15 repeat1     jev    0.30s 8230 tok
+008K-15 repeat1     subq   0.72s 8129 tok
+008K-15 repeat2     subq   0.66s 8129 tok
+008K-15 repeat2     jev    0.32s 8230 tok
+008K-16 main        jev    0.30s 8182 tok
+008K-16 main        subq   0.72s 8090 tok
+008K-16 robust      subq   0.44s {"detail":{"error_type":"validation_error","message":"questions: must NOT have m
+008K-16 robust      jev    0.34s 8984 tok
+008K-16 repeat1     jev    0.30s 8182 tok
+008K-16 repeat1     subq   0.64s 8090 tok
+008K-16 repeat2     subq   0.72s 8090 tok
+008K-16 repeat2     jev    0.38s 8182 tok
+008K-17 main        jev    0.32s 8294 tok
+008K-17 main        subq   0.71s 8188 tok
+008K-17 robust      subq   0.45s {"detail":{"error_type":"validation_error","message":"questions: must NOT have m
+008K-17 robust      jev    0.31s 9096 tok
+008K-17 repeat1     jev    0.29s 8294 tok
+008K-17 repeat1     subq   0.73s 8188 tok
+008K-17 repeat2     subq   0.66s 8188 tok
+008K-17 repeat2     jev    0.29s 8294 tok
+008K-18 main        jev    0.32s 8192 tok
+008K-18 main        subq   0.81s 8115 tok
+008K-18 robust      subq   0.37s {"detail":{"error_type":"validation_error","message":"questions: must NOT have m
+008K-18 robust      jev    0.32s 8994 tok
+008K-18 repeat1     jev    0.30s 8192 tok
+008K-18 repeat1     subq   0.63s 8115 tok
+008K-18 repeat2     subq   0.66s 8115 tok
+008K-18 repeat2     jev    0.32s 8192 tok
+008K-19 main        jev    0.29s 8257 tok
+008K-19 main        subq   0.74s 8140 tok
+008K-19 robust      subq   0.47s {"detail":{"error_type":"validation_error","message":"questions: must NOT have m
+008K-19 robust      jev    0.31s 9059 tok
+008K-19 repeat1     jev    0.35s 8257 tok
+008K-19 repeat1     subq   0.66s 8140 tok
+008K-19 repeat2     subq   0.76s 8140 tok
+008K-19 repeat2     jev    0.31s 8257 tok
+016K-00 main        jev    0.34s 15700 tok
+016K-00 main        subq   1.14s 15550 tok
+016K-01 main        subq   1.17s 15572 tok
+016K-01 main        jev    0.34s 15726 tok
+016K-02 main        jev    0.45s 15823 tok
+016K-02 main        subq   0.94s 15680 tok
+016K-03 main        subq   0.92s 15660 tok
+016K-03 main        jev    0.37s 15802 tok
+016K-04 main        jev    0.39s 15705 tok
+016K-04 main        subq   1.15s 15525 tok
+016K-05 main        subq   1.13s 15588 tok
 016K-05 main        jev    0.36s 15788 tok
-016K-06 main        jev    0.36s 15720 tok
-016K-06 main        subq   1.98s 15557 tok
-016K-07 main        subq   2.00s 15493 tok
-016K-07 main        jev    0.34s 15686 tok
-016K-08 main        jev    0.37s 15779 tok
-016K-08 main        subq   1.90s 15581 tok
-016K-09 main        subq   1.96s 15417 tok
-016K-09 main        jev    0.36s 15599 tok
+016K-06 main        jev    0.47s 15720 tok
+016K-06 main        subq   1.16s 15557 tok
+016K-07 main        subq   1.18s 15493 tok
+016K-07 main        jev    0.41s 15686 tok
+016K-08 main        jev    0.36s 15779 tok
+016K-08 main        subq   1.13s 15581 tok
+016K-09 main        subq   1.11s 15417 tok
+016K-09 main        jev    0.34s 15599 tok
+016K-10 main        jev    0.36s 15734 tok
+016K-10 main        subq   1.13s 15564 tok
+016K-11 main        subq   0.93s 15607 tok
+016K-11 main        jev    0.35s 15767 tok
+016K-12 main        jev    0.40s 15689 tok
+016K-12 main        subq   1.10s 15466 tok
+016K-13 main        subq   1.12s 15486 tok
+016K-13 main        jev    0.37s 15715 tok
+016K-14 main        jev    0.34s 15809 tok
+016K-14 main        subq   0.93s 15619 tok
+016K-15 main        subq   1.24s 15574 tok
+016K-15 main        jev    0.35s 15729 tok
+016K-16 main        jev    0.34s 15709 tok
+016K-16 main        subq   1.12s 15552 tok
+016K-17 main        subq   1.28s 15563 tok
+016K-17 main        jev    0.37s 15705 tok
+016K-18 main        jev    0.36s 15641 tok
+016K-18 main        subq   1.44s 15476 tok
+016K-19 main        subq   1.14s 15555 tok
+016K-19 main        jev    0.35s 15711 tok
 030K-00 main        jev    0.46s 28766 tok
-030K-00 main        subq   1.28s 28496 tok
-030K-01 main        subq   1.32s 28578 tok
-030K-01 main        jev    0.46s 28951 tok
-030K-02 main        jev    0.47s 28843 tok
-030K-02 main        subq   1.82s 28564 tok
-030K-03 main        subq   1.27s 28737 tok
-030K-03 main        jev    0.45s 28978 tok
-030K-04 main        jev    0.43s 28841 tok
-030K-04 main        subq   1.28s 28556 tok
-030K-05 main        subq   1.32s 28659 tok
-030K-05 main        jev    0.48s 28939 tok
-030K-06 main        jev    0.44s 28826 tok
-030K-06 main        subq   1.32s 28537 tok
-030K-07 main        subq   1.30s 28577 tok
-030K-07 main        jev    0.56s 28865 tok
-030K-08 main        jev    0.44s 28935 tok
-030K-08 main        subq   1.31s 28664 tok
-030K-09 main        subq   1.33s 28636 tok
-030K-09 main        jev    0.70s 28902 tok
-064K-00 main        jev    0.32s {"detail":{"error_type":"max_tokens_exceeded"}}
-064K-00 main        subq   1.59s 60067 tok
-064K-00 chunked   0 jev    0.50s 27826 tok
+030K-00 main        subq   1.09s 28496 tok
+030K-01 main        subq   1.13s 28578 tok
+030K-01 main        jev    0.47s 28951 tok
+030K-02 main        jev    0.45s 28843 tok
+030K-02 main        subq   1.09s 28564 tok
+030K-03 main        subq   1.32s 28737 tok
+030K-03 main        jev    0.46s 28978 tok
+030K-04 main        jev    0.46s 28841 tok
+030K-04 main        subq   1.16s 28556 tok
+030K-05 main        subq   1.10s 28659 tok
+030K-05 main        jev    0.46s 28939 tok
+030K-06 main        jev    0.46s 28826 tok
+030K-06 main        subq   1.17s 28537 tok
+030K-07 main        subq   1.22s 28577 tok
+030K-07 main        jev    0.46s 28865 tok
+030K-08 main        jev    0.46s 28935 tok
+030K-08 main        subq   1.15s 28664 tok
+030K-09 main        subq   1.14s 28636 tok
+030K-09 main        jev    0.45s 28902 tok
+030K-10 main        jev    0.46s 28895 tok
+030K-10 main        subq   1.12s 28629 tok
+030K-11 main        subq   1.06s 28452 tok
+030K-11 main        jev    0.45s 28772 tok
+030K-12 main        jev    0.45s 28797 tok
+030K-12 main        subq   1.15s 28524 tok
+030K-13 main        subq   1.09s 28546 tok
+030K-13 main        jev    0.46s 28826 tok
+030K-14 main        jev    0.59s 28898 tok
+030K-14 main        subq   1.14s 28533 tok
+030K-15 main        subq   1.13s 28627 tok
+030K-15 main        jev    0.51s 28913 tok
+030K-16 main        jev    0.47s 28959 tok
+030K-16 main        subq   1.14s 28736 tok
+030K-17 main        subq   1.12s 28592 tok
+030K-17 main        jev    0.44s 28945 tok
+030K-18 main        jev    0.45s 28896 tok
+030K-18 main        subq   1.10s 28563 tok
+030K-19 main        subq   1.15s 28647 tok
+030K-19 main        jev    0.47s 28944 tok
+064K-00 main        jev    0.31s {"detail":{"error_type":"max_tokens_exceeded"}}
+064K-00 main        subq   1.30s 60067 tok
+064K-00 chunked   0 jev    0.44s 27826 tok
 064K-00 chunked   1 jev    0.45s 27919 tok
-064K-00 chunked   2 jev    0.28s 6400 tok
-064K-01 main        jev    0.33s {"detail":{"error_type":"max_tokens_exceeded"}}
-064K-01 main        subq   1.60s 60055 tok
-064K-01 chunked   0 jev    0.47s 27935 tok
-064K-01 chunked   1 jev    0.45s 27957 tok
-064K-01 chunked   2 jev    0.29s 6411 tok
-064K-02 main        jev    0.71s {"detail":{"error_type":"max_tokens_exceeded"}}
-064K-02 main        subq   1.62s 60189 tok
-064K-02 chunked   0 jev    0.45s 27997 tok
-064K-02 chunked   1 jev    0.45s 27890 tok
-064K-02 chunked   2 jev    0.27s 6396 tok
-064K-03 main        jev    0.29s {"detail":{"error_type":"max_tokens_exceeded"}}
-064K-03 main        subq   1.59s 60168 tok
-064K-03 chunked   0 jev    0.45s 27968 tok
-064K-03 chunked   1 jev    0.46s 27969 tok
-064K-03 chunked   2 jev    0.27s 6304 tok
-064K-04 main        jev    0.33s {"detail":{"error_type":"max_tokens_exceeded"}}
-064K-04 main        subq   1.59s 60072 tok
+064K-00 chunked   2 jev    0.27s 6400 tok
+064K-01 main        jev    0.30s {"detail":{"error_type":"max_tokens_exceeded"}}
+064K-01 main        subq   1.88s 60055 tok
+064K-01 chunked   0 jev    0.48s 27935 tok
+064K-01 chunked   1 jev    0.46s 27957 tok
+064K-01 chunked   2 jev    0.30s 6411 tok
+064K-02 main        jev    0.31s {"detail":{"error_type":"max_tokens_exceeded"}}
+064K-02 main        subq   1.25s 60189 tok
+064K-02 chunked   0 jev    0.47s 27997 tok
+064K-02 chunked   1 jev    0.44s 27890 tok
+064K-02 chunked   2 jev    0.29s 6396 tok
+064K-03 main        jev    0.32s {"detail":{"error_type":"max_tokens_exceeded"}}
+064K-03 main        subq   1.25s 60168 tok
+064K-03 chunked   0 jev    0.43s 27968 tok
+064K-03 chunked   1 jev    0.43s 27969 tok
+064K-03 chunked   2 jev    0.30s 6304 tok
+064K-04 main        jev    0.29s {"detail":{"error_type":"max_tokens_exceeded"}}
+064K-04 main        subq   1.26s 60072 tok
 064K-04 chunked   0 jev    0.46s 27841 tok
-064K-04 chunked   1 jev    0.45s 27913 tok
-064K-04 chunked   2 jev    0.28s 6444 tok
-064K-05 main        jev    0.38s {"detail":{"error_type":"max_tokens_exceeded"}}
-064K-05 main        subq   1.61s 60122 tok
+064K-04 chunked   1 jev    0.44s 27913 tok
+064K-04 chunked   2 jev    0.29s 6444 tok
+064K-05 main        jev    0.31s {"detail":{"error_type":"max_tokens_exceeded"}}
+064K-05 main        subq   1.26s 60122 tok
 064K-05 chunked   0 jev    0.45s 28001 tok
-064K-05 chunked   1 jev    0.42s 27890 tok
-064K-05 chunked   2 jev    0.27s 6481 tok
-064K-06 main        jev    0.28s {"detail":{"error_type":"max_tokens_exceeded"}}
-064K-06 main        subq   1.65s 60091 tok
-064K-06 chunked   0 jev    0.46s 27830 tok
-064K-06 chunked   1 jev    0.53s 27944 tok
-064K-06 chunked   2 jev    0.27s 6429 tok
-064K-07 main        jev    0.32s {"detail":{"error_type":"max_tokens_exceeded"}}
-064K-07 main        subq   1.64s 60139 tok
-064K-07 chunked   0 jev    0.51s 27822 tok
-064K-07 chunked   1 jev    0.46s 27947 tok
+064K-05 chunked   1 jev    0.46s 27890 tok
+064K-05 chunked   2 jev    0.28s 6481 tok
+064K-06 main        jev    0.35s {"detail":{"error_type":"max_tokens_exceeded"}}
+064K-06 main        subq   1.22s 60091 tok
+064K-06 chunked   0 jev    0.44s 27830 tok
+064K-06 chunked   1 jev    0.44s 27944 tok
+064K-06 chunked   2 jev    0.28s 6429 tok
+064K-07 main        jev    0.35s {"detail":{"error_type":"max_tokens_exceeded"}}
+064K-07 main        subq   1.30s 60139 tok
+064K-07 chunked   0 jev    0.43s 27822 tok
+064K-07 chunked   1 jev    0.49s 27947 tok
 064K-07 chunked   2 jev    0.30s 6436 tok
-064K-08 main        jev    0.32s {"detail":{"error_type":"max_tokens_exceeded"}}
-064K-08 main        subq   1.63s 60254 tok
-064K-08 chunked   0 jev    0.43s 27913 tok
-064K-08 chunked   1 jev    0.46s 27946 tok
-064K-08 chunked   2 jev    0.28s 6475 tok
-064K-09 main        jev    0.33s {"detail":{"error_type":"max_tokens_exceeded"}}
-064K-09 main        subq   1.66s 60074 tok
-064K-09 chunked   0 jev    0.42s 27909 tok
-064K-09 chunked   1 jev    0.44s 27869 tok
-064K-09 chunked   2 jev    0.28s 6423 tok
-128K-00 main        jev    0.33s {"detail":{"error_type":"max_tokens_exceeded"}}
-128K-00 main        subq   1.51s 119325 tok
+064K-08 main        jev    0.33s {"detail":{"error_type":"max_tokens_exceeded"}}
+064K-08 main        subq   1.29s 60254 tok
+064K-08 chunked   0 jev    0.47s 27913 tok
+064K-08 chunked   1 jev    0.45s 27946 tok
+064K-08 chunked   2 jev    0.29s 6475 tok
+064K-09 main        jev    0.38s {"detail":{"error_type":"max_tokens_exceeded"}}
+064K-09 main        subq   1.22s 60074 tok
+064K-09 chunked   0 jev    0.46s 27909 tok
+064K-09 chunked   1 jev    0.46s 27869 tok
+064K-09 chunked   2 jev    0.29s 6423 tok
+064K-10 main        jev    0.39s {"detail":{"error_type":"max_tokens_exceeded"}}
+064K-10 main        subq   1.28s 60191 tok
+064K-10 chunked   0 jev    0.45s 27897 tok
+064K-10 chunked   1 jev    0.42s 27871 tok
+064K-10 chunked   2 jev    0.30s 6538 tok
+064K-11 main        jev    0.33s {"detail":{"error_type":"max_tokens_exceeded"}}
+064K-11 main        subq   1.23s 60107 tok
+064K-11 chunked   0 jev    0.44s 27920 tok
+064K-11 chunked   1 jev    0.45s 27897 tok
+064K-11 chunked   2 jev    0.26s 6410 tok
+064K-12 main        jev    0.29s {"detail":{"error_type":"max_tokens_exceeded"}}
+064K-12 main        subq   1.30s 60056 tok
+064K-12 chunked   0 jev    0.43s 27896 tok
+064K-12 chunked   1 jev    0.44s 27846 tok
+064K-12 chunked   2 jev    0.27s 6422 tok
+064K-13 main        jev    0.29s {"detail":{"error_type":"max_tokens_exceeded"}}
+064K-13 main        subq   1.21s 60138 tok
+064K-13 chunked   0 jev    0.47s 27893 tok
+064K-13 chunked   1 jev    0.44s 27916 tok
+064K-13 chunked   2 jev    0.29s 6384 tok
+064K-14 main        jev    0.32s {"detail":{"error_type":"max_tokens_exceeded"}}
+064K-14 main        subq   1.22s 60217 tok
+064K-14 chunked   0 jev    0.46s 27973 tok
+064K-14 chunked   1 jev    0.46s 27925 tok
+064K-14 chunked   2 jev    0.30s 6395 tok
+064K-15 main        jev    0.29s {"detail":{"error_type":"max_tokens_exceeded"}}
+064K-15 main        subq   1.29s 60231 tok
+064K-15 chunked   0 jev    0.43s 27888 tok
+064K-15 chunked   1 jev    0.46s 27926 tok
+064K-15 chunked   2 jev    0.32s 6509 tok
+064K-16 main        jev    0.34s {"detail":{"error_type":"max_tokens_exceeded"}}
+064K-16 main        subq   1.19s 60073 tok
+064K-16 chunked   0 jev    0.46s 27878 tok
+064K-16 chunked   1 jev    0.44s 27898 tok
+064K-16 chunked   2 jev    0.29s 6406 tok
+064K-17 main        jev    0.31s {"detail":{"error_type":"max_tokens_exceeded"}}
+064K-17 main        subq   1.20s 60022 tok
+064K-17 chunked   0 jev    0.43s 27789 tok
+064K-17 chunked   1 jev    0.44s 27930 tok
+064K-17 chunked   2 jev    0.30s 6422 tok
+064K-18 main        jev    0.31s {"detail":{"error_type":"max_tokens_exceeded"}}
+064K-18 main        subq   1.22s 60068 tok
+064K-18 chunked   0 jev    0.42s 27954 tok
+064K-18 chunked   1 jev    0.45s 27992 tok
+064K-18 chunked   2 jev    0.28s 6393 tok
+064K-19 main        jev    0.29s {"detail":{"error_type":"max_tokens_exceeded"}}
+064K-19 main        subq   1.29s 60067 tok
+064K-19 chunked   0 jev    0.44s 27780 tok
+064K-19 chunked   1 jev    0.44s 27948 tok
+064K-19 chunked   2 jev    0.29s 6417 tok
+128K-00 main        jev    0.43s {"detail":{"error_type":"max_tokens_exceeded"}}
+128K-00 main        subq   1.85s 119325 tok
 128K-00 chunked   0 jev    0.46s 27851 tok
-128K-00 chunked   1 jev    0.44s 27973 tok
-128K-00 chunked   2 jev    0.44s 27981 tok
-128K-00 chunked   3 jev    0.45s 27925 tok
-128K-00 chunked   4 jev    0.31s 12128 tok
-128K-01 main        jev    0.32s {"detail":{"error_type":"max_tokens_exceeded"}}
-128K-01 main        subq   2.27s 119384 tok
-128K-01 chunked   0 jev    0.45s 27812 tok
+128K-00 chunked   1 jev    0.43s 27973 tok
+128K-00 chunked   2 jev    0.49s 27981 tok
+128K-00 chunked   3 jev    0.44s 27925 tok
+128K-00 chunked   4 jev    0.32s 12128 tok
+128K-01 main        jev    0.39s {"detail":{"error_type":"max_tokens_exceeded"}}
+128K-01 main        subq   2.49s 119384 tok
+128K-01 chunked   0 jev    0.62s 27812 tok
 128K-01 chunked   1 jev    0.48s 27810 tok
-128K-01 chunked   2 jev    0.45s 27856 tok
+128K-01 chunked   2 jev    0.46s 27856 tok
 128K-01 chunked   3 jev    0.45s 27949 tok
 128K-01 chunked   4 jev    0.34s 12134 tok
-128K-02 main        jev    0.39s {"detail":{"error_type":"max_tokens_exceeded"}}
-128K-02 main        subq   2.39s 119455 tok
-128K-02 chunked   0 jev    0.42s 27799 tok
-128K-02 chunked   1 jev    0.44s 27818 tok
+128K-02 main        jev    0.31s {"detail":{"error_type":"max_tokens_exceeded"}}
+128K-02 main        subq   1.83s 119455 tok
+128K-02 chunked   0 jev    0.44s 27799 tok
+128K-02 chunked   1 jev    0.45s 27818 tok
 128K-02 chunked   2 jev    0.44s 28037 tok
-128K-02 chunked   3 jev    0.43s 27934 tok
+128K-02 chunked   3 jev    0.47s 27934 tok
 128K-02 chunked   4 jev    0.37s 12015 tok
-128K-03 main        jev    0.72s {"detail":{"error_type":"max_tokens_exceeded"}}
-128K-03 main        subq   2.26s 119275 tok
+128K-03 main        jev    0.42s {"detail":{"error_type":"max_tokens_exceeded"}}
+128K-03 main        subq   1.83s 119275 tok
 128K-03 chunked   0 jev    0.44s 27837 tok
-128K-03 chunked   1 jev    0.43s 27885 tok
+128K-03 chunked   1 jev    0.42s 27885 tok
 128K-03 chunked   2 jev    0.44s 27805 tok
-128K-03 chunked   3 jev    0.45s 27906 tok
-128K-03 chunked   4 jev    0.36s 12127 tok
-128K-04 main        jev    0.43s {"detail":{"error_type":"max_tokens_exceeded"}}
-128K-04 main        subq   2.34s 119666 tok
-128K-04 chunked   0 jev    0.48s 27997 tok
-128K-04 chunked   1 jev    0.49s 27888 tok
-128K-04 chunked   2 jev    0.52s 27896 tok
-128K-04 chunked   3 jev    0.53s 27847 tok
+128K-03 chunked   3 jev    0.42s 27906 tok
+128K-03 chunked   4 jev    0.34s 12127 tok
+128K-04 main        jev    0.31s {"detail":{"error_type":"max_tokens_exceeded"}}
+128K-04 main        subq   1.84s 119666 tok
+128K-04 chunked   0 jev    0.44s 27997 tok
+128K-04 chunked   1 jev    0.44s 27888 tok
+128K-04 chunked   2 jev    0.44s 27896 tok
+128K-04 chunked   3 jev    0.45s 27847 tok
 128K-04 chunked   4 jev    0.33s 12230 tok
-128K-05 main        jev    0.69s {"detail":{"error_type":"max_tokens_exceeded"}}
-128K-05 main        subq   2.45s 119410 tok
-128K-05 chunked   0 jev    0.50s 27918 tok
-128K-05 chunked   1 jev    0.52s 27885 tok
-128K-05 chunked   2 jev    0.43s 27984 tok
-128K-05 chunked   3 jev    0.51s 27959 tok
-128K-05 chunked   4 jev    0.41s 12154 tok
-128K-06 main        jev    0.46s {"detail":{"error_type":"max_tokens_exceeded"}}
-128K-06 main        subq   2.36s 119407 tok
-128K-06 chunked   0 jev    0.52s 27990 tok
-128K-06 chunked   1 jev    0.53s 27919 tok
-128K-06 chunked   2 jev    0.52s 28031 tok
-128K-06 chunked   3 jev    0.52s 27994 tok
-128K-06 chunked   4 jev    0.32s 11992 tok
-128K-07 main        jev    0.91s {"detail":{"error_type":"max_tokens_exceeded"}}
-128K-07 main        subq   2.43s 119440 tok
-128K-07 chunked   0 jev    0.52s 27840 tok
-128K-07 chunked   1 jev    0.52s 27998 tok
-128K-07 chunked   2 jev    0.52s 27962 tok
-128K-07 chunked   3 jev    0.53s 27916 tok
+128K-05 main        jev    0.34s {"detail":{"error_type":"max_tokens_exceeded"}}
+128K-05 main        subq   1.83s 119410 tok
+128K-05 chunked   0 jev    0.44s 27918 tok
+128K-05 chunked   1 jev    0.44s 27885 tok
+128K-05 chunked   2 jev    0.47s 27984 tok
+128K-05 chunked   3 jev    0.45s 27959 tok
+128K-05 chunked   4 jev    0.31s 12154 tok
+128K-06 main        jev    0.44s {"detail":{"error_type":"max_tokens_exceeded"}}
+128K-06 main        subq   1.93s 119407 tok
+128K-06 chunked   0 jev    0.43s 27990 tok
+128K-06 chunked   1 jev    0.62s 27919 tok
+128K-06 chunked   2 jev    0.43s 28031 tok
+128K-06 chunked   3 jev    0.48s 27994 tok
+128K-06 chunked   4 jev    0.34s 11992 tok
+128K-07 main        jev    0.36s {"detail":{"error_type":"max_tokens_exceeded"}}
+128K-07 main        subq   1.90s 119440 tok
+128K-07 chunked   0 jev    0.45s 27840 tok
+128K-07 chunked   1 jev    0.48s 27998 tok
+128K-07 chunked   2 jev    0.45s 27962 tok
+128K-07 chunked   3 jev    0.46s 27916 tok
 128K-07 chunked   4 jev    0.32s 12228 tok
-128K-08 main        jev    0.41s {"detail":{"error_type":"max_tokens_exceeded"}}
-128K-08 main        subq   2.41s 119557 tok
-128K-08 chunked   0 jev    0.51s 27864 tok
-128K-08 chunked   1 jev    0.52s 27965 tok
-128K-08 chunked   2 jev    0.52s 27953 tok
-128K-08 chunked   3 jev    0.52s 27876 tok
+128K-08 main        jev    0.46s {"detail":{"error_type":"max_tokens_exceeded"}}
+128K-08 main        subq   1.77s 119557 tok
+128K-08 chunked   0 jev    0.48s 27864 tok
+128K-08 chunked   1 jev    0.59s 27965 tok
+128K-08 chunked   2 jev    0.50s 27953 tok
+128K-08 chunked   3 jev    0.46s 27876 tok
 128K-08 chunked   4 jev    0.31s 12058 tok
-128K-09 main        jev    0.48s {"detail":{"error_type":"max_tokens_exceeded"}}
-128K-09 main        subq   2.40s 119394 tok
-128K-09 chunked   0 jev    0.46s 27962 tok
-128K-09 chunked   1 jev    0.52s 28031 tok
-128K-09 chunked   2 jev    0.43s 27882 tok
-128K-09 chunked   3 jev    0.55s 27994 tok
-128K-09 chunked   4 jev    0.35s 12047 tok
-256K-00 main        jev    0.59s {"detail":{"error_type":"max_tokens_exceeded"}}
-256K-00 main        subq   3.74s 238276 tok
-256K-00 chunked   0 jev    0.46s 27873 tok
-256K-00 chunked   1 jev    0.45s 27936 tok
-256K-00 chunked   2 jev    0.42s 27885 tok
-256K-00 chunked   3 jev    0.46s 27935 tok
+128K-09 main        jev    0.36s {"detail":{"error_type":"max_tokens_exceeded"}}
+128K-09 main        subq   1.86s 119394 tok
+128K-09 chunked   0 jev    0.43s 27962 tok
+128K-09 chunked   1 jev    0.45s 28031 tok
+128K-09 chunked   2 jev    0.41s 27882 tok
+128K-09 chunked   3 jev    0.44s 27994 tok
+128K-09 chunked   4 jev    0.32s 12047 tok
+128K-10 main        jev    0.34s {"detail":{"error_type":"max_tokens_exceeded"}}
+128K-10 main        subq   1.80s 119671 tok
+128K-10 chunked   0 jev    0.45s 27899 tok
+128K-10 chunked   1 jev    0.41s 27883 tok
+128K-10 chunked   2 jev    0.43s 27958 tok
+128K-10 chunked   3 jev    0.43s 27964 tok
+128K-10 chunked   4 jev    0.35s 12129 tok
+128K-11 main        jev    0.33s {"detail":{"error_type":"max_tokens_exceeded"}}
+128K-11 main        subq   1.88s 119728 tok
+128K-11 chunked   0 jev    0.45s 28003 tok
+128K-11 chunked   1 jev    0.46s 28049 tok
+128K-11 chunked   2 jev    0.45s 27940 tok
+128K-11 chunked   3 jev    0.54s 28009 tok
+128K-11 chunked   4 jev    0.33s 12159 tok
+128K-12 main        jev    0.43s {"detail":{"error_type":"max_tokens_exceeded"}}
+128K-12 main        subq   1.87s 119483 tok
+128K-12 chunked   0 jev    0.48s 27881 tok
+128K-12 chunked   1 jev    0.45s 27880 tok
+128K-12 chunked   2 jev    0.44s 27876 tok
+128K-12 chunked   3 jev    0.47s 27935 tok
+128K-12 chunked   4 jev    0.32s 12162 tok
+128K-13 main        jev    0.44s {"detail":{"error_type":"max_tokens_exceeded"}}
+128K-13 main        subq   1.91s 119628 tok
+128K-13 chunked   0 jev    0.44s 27849 tok
+128K-13 chunked   1 jev    0.44s 27951 tok
+128K-13 chunked   2 jev    0.43s 27889 tok
+128K-13 chunked   3 jev    0.45s 27986 tok
+128K-13 chunked   4 jev    0.32s 12069 tok
+128K-14 main        jev    0.42s {"detail":{"error_type":"max_tokens_exceeded"}}
+128K-14 main        subq   1.88s 119506 tok
+128K-14 chunked   0 jev    0.44s 27777 tok
+128K-14 chunked   1 jev    0.46s 27795 tok
+128K-14 chunked   2 jev    0.43s 28011 tok
+128K-14 chunked   3 jev    0.43s 27972 tok
+128K-14 chunked   4 jev    0.33s 12139 tok
+128K-15 main        jev    0.43s {"detail":{"error_type":"max_tokens_exceeded"}}
+128K-15 main        subq   1.82s 119299 tok
+128K-15 chunked   0 jev    0.43s 27912 tok
+128K-15 chunked   1 jev    0.45s 28029 tok
+128K-15 chunked   2 jev    0.43s 27965 tok
+128K-15 chunked   3 jev    0.43s 27889 tok
+128K-15 chunked   4 jev    0.31s 12071 tok
+128K-16 main        jev    0.34s {"detail":{"error_type":"max_tokens_exceeded"}}
+128K-16 main        subq   1.86s 119400 tok
+128K-16 chunked   0 jev    0.45s 27757 tok
+128K-16 chunked   1 jev    0.52s 27910 tok
+128K-16 chunked   2 jev    0.42s 27977 tok
+128K-16 chunked   3 jev    0.44s 27879 tok
+128K-16 chunked   4 jev    0.30s 12033 tok
+128K-17 main        jev    0.45s {"detail":{"error_type":"max_tokens_exceeded"}}
+128K-17 main        subq   1.91s 119474 tok
+128K-17 chunked   0 jev    0.45s 27823 tok
+128K-17 chunked   1 jev    0.44s 27861 tok
+128K-17 chunked   2 jev    0.45s 27906 tok
+128K-17 chunked   3 jev    0.45s 27959 tok
+128K-17 chunked   4 jev    0.34s 12139 tok
+128K-18 main        jev    0.44s {"detail":{"error_type":"max_tokens_exceeded"}}
+128K-18 main        subq   1.79s 119361 tok
+128K-18 chunked   0 jev    0.47s 27918 tok
+128K-18 chunked   1 jev    0.42s 27955 tok
+128K-18 chunked   2 jev    0.43s 27923 tok
+128K-18 chunked   3 jev    0.45s 27971 tok
+128K-18 chunked   4 jev    0.32s 12109 tok
+128K-19 main        jev    0.43s {"detail":{"error_type":"max_tokens_exceeded"}}
+128K-19 main        subq   1.83s 119667 tok
+128K-19 chunked   0 jev    0.46s 27892 tok
+128K-19 chunked   1 jev    0.44s 27930 tok
+128K-19 chunked   2 jev    0.44s 27972 tok
+128K-19 chunked   3 jev    0.43s 28002 tok
+128K-19 chunked   4 jev    0.34s 12005 tok
+256K-00 main        jev    0.52s {"detail":{"error_type":"max_tokens_exceeded"}}
+256K-00 main        subq   3.10s 238276 tok
+256K-00 chunked   0 jev    0.42s 27873 tok
+256K-00 chunked   1 jev    0.43s 27936 tok
+256K-00 chunked   2 jev    0.43s 27885 tok
+256K-00 chunked   3 jev    0.44s 27935 tok
 256K-00 chunked   4 jev    0.46s 27819 tok
 256K-00 chunked   5 jev    0.45s 27895 tok
-256K-00 chunked   6 jev    0.45s 27936 tok
-256K-00 chunked   7 jev    0.46s 27887 tok
-256K-00 chunked   8 jev    0.40s 23336 tok
-256K-01 main        jev    0.50s {"detail":{"error_type":"max_tokens_exceeded"}}
-256K-01 main        subq   3.55s 238571 tok
-256K-01 chunked   0 jev    0.46s 27823 tok
-256K-01 chunked   1 jev    0.45s 27942 tok
-256K-01 chunked   2 jev    0.44s 27897 tok
-256K-01 chunked   3 jev    0.44s 27939 tok
-256K-01 chunked   4 jev    0.45s 27886 tok
+256K-00 chunked   6 jev    0.44s 27936 tok
+256K-00 chunked   7 jev    0.44s 27887 tok
+256K-00 chunked   8 jev    0.43s 23336 tok
+256K-01 main        jev    0.43s {"detail":{"error_type":"max_tokens_exceeded"}}
+256K-01 main        subq   2.97s 238571 tok
+256K-01 chunked   0 jev    0.44s 27823 tok
+256K-01 chunked   1 jev    0.46s 27942 tok
+256K-01 chunked   2 jev    0.46s 27897 tok
+256K-01 chunked   3 jev    0.47s 27939 tok
+256K-01 chunked   4 jev    0.44s 27886 tok
 256K-01 chunked   5 jev    0.44s 27977 tok
 256K-01 chunked   6 jev    0.43s 27960 tok
-256K-01 chunked   7 jev    0.46s 27987 tok
-256K-01 chunked   8 jev    0.41s 23436 tok
-256K-02 main        jev    0.36s {"detail":{"error_type":"max_tokens_exceeded"}}
-256K-02 main        subq   3.67s 238152 tok
-256K-02 chunked   0 jev    0.63s 27775 tok
-256K-02 chunked   1 jev    0.44s 27822 tok
-256K-02 chunked   2 jev    0.42s 27917 tok
-256K-02 chunked   3 jev    0.44s 27902 tok
+256K-01 chunked   7 jev    0.47s 27987 tok
+256K-01 chunked   8 jev    0.40s 23436 tok
+256K-02 main        jev    0.47s {"detail":{"error_type":"max_tokens_exceeded"}}
+256K-02 main        subq   3.34s 238152 tok
+256K-02 chunked   0 jev    0.50s 27775 tok
+256K-02 chunked   1 jev    0.45s 27822 tok
+256K-02 chunked   2 jev    0.43s 27917 tok
+256K-02 chunked   3 jev    0.43s 27902 tok
 256K-02 chunked   4 jev    0.43s 27970 tok
-256K-02 chunked   5 jev    0.44s 27920 tok
-256K-02 chunked   6 jev    0.49s 27864 tok
-256K-02 chunked   7 jev    0.45s 27882 tok
-256K-02 chunked   8 jev    0.42s 23414 tok
-256K-03 main        jev    0.51s {"detail":{"error_type":"max_tokens_exceeded"}}
-256K-03 main        subq   3.72s 238471 tok
-256K-03 chunked   0 jev    0.46s 27829 tok
-256K-03 chunked   1 jev    0.46s 27909 tok
-256K-03 chunked   2 jev    0.46s 27916 tok
-256K-03 chunked   3 jev    0.43s 27900 tok
-256K-03 chunked   4 jev    0.46s 27963 tok
-256K-03 chunked   5 jev    0.44s 27904 tok
-256K-03 chunked   6 jev    0.43s 27952 tok
+256K-02 chunked   5 jev    0.42s 27920 tok
+256K-02 chunked   6 jev    0.44s 27864 tok
+256K-02 chunked   7 jev    0.43s 27882 tok
+256K-02 chunked   8 jev    0.40s 23414 tok
+256K-03 main        jev    0.50s {"detail":{"error_type":"max_tokens_exceeded"}}
+256K-03 main        subq   2.85s 238471 tok
+256K-03 chunked   0 jev    0.47s 27829 tok
+256K-03 chunked   1 jev    0.44s 27909 tok
+256K-03 chunked   2 jev    0.44s 27916 tok
+256K-03 chunked   3 jev    0.44s 27900 tok
+256K-03 chunked   4 jev    0.43s 27963 tok
+256K-03 chunked   5 jev    0.52s 27904 tok
+256K-03 chunked   6 jev    0.48s 27952 tok
 256K-03 chunked   7 jev    0.45s 27894 tok
-256K-03 chunked   8 jev    0.41s 23547 tok
-256K-04 main        jev    0.40s {"detail":{"error_type":"max_tokens_exceeded"}}
-256K-04 main        subq   3.56s 237993 tok
-256K-04 chunked   0 jev    0.45s 27799 tok
-256K-04 chunked   1 jev    0.47s 27974 tok
-256K-04 chunked   2 jev    0.44s 27900 tok
-256K-04 chunked   3 jev    0.43s 28042 tok
+256K-03 chunked   8 jev    0.42s 23547 tok
+256K-04 main        jev    0.52s {"detail":{"error_type":"max_tokens_exceeded"}}
+256K-04 main        subq   3.04s 237993 tok
+256K-04 chunked   0 jev    0.43s 27799 tok
+256K-04 chunked   1 jev    0.44s 27974 tok
+256K-04 chunked   2 jev    0.42s 27900 tok
+256K-04 chunked   3 jev    0.46s 28042 tok
 256K-04 chunked   4 jev    0.44s 27944 tok
-256K-04 chunked   5 jev    0.45s 27990 tok
-256K-04 chunked   6 jev    0.43s 27986 tok
-256K-04 chunked   7 jev    0.42s 27942 tok
-256K-04 chunked   8 jev    0.42s 23429 tok
-256K-05 main        jev    0.48s {"detail":{"error_type":"max_tokens_exceeded"}}
-256K-05 main        subq   3.61s 237788 tok
+256K-04 chunked   5 jev    0.42s 27990 tok
+256K-04 chunked   6 jev    0.42s 27986 tok
+256K-04 chunked   7 jev    0.44s 27942 tok
+256K-04 chunked   8 jev    0.40s 23429 tok
+256K-05 main        jev    0.37s {"detail":{"error_type":"max_tokens_exceeded"}}
+256K-05 main        subq   3.09s 237788 tok
 256K-05 chunked   0 jev    0.44s 27899 tok
-256K-05 chunked   1 jev    0.44s 28020 tok
-256K-05 chunked   2 jev    0.46s 27990 tok
-256K-05 chunked   3 jev    0.43s 27853 tok
+256K-05 chunked   1 jev    0.47s 28020 tok
+256K-05 chunked   2 jev    0.47s 27990 tok
+256K-05 chunked   3 jev    0.45s 27853 tok
 256K-05 chunked   4 jev    0.45s 27946 tok
-256K-05 chunked   5 jev    0.45s 27865 tok
-256K-05 chunked   6 jev    0.46s 27920 tok
-256K-05 chunked   7 jev    0.48s 28038 tok
-256K-05 chunked   8 jev    0.40s 23301 tok
-256K-06 main        jev    0.47s {"detail":{"error_type":"max_tokens_exceeded"}}
-256K-06 main        subq   3.69s 237731 tok
-256K-06 chunked   0 jev    0.42s 27790 tok
-256K-06 chunked   1 jev    0.43s 27983 tok
-256K-06 chunked   2 jev    0.46s 28002 tok
-256K-06 chunked   3 jev    0.50s 27923 tok
-256K-06 chunked   4 jev    0.46s 27947 tok
-256K-06 chunked   5 jev    0.42s 28018 tok
-256K-06 chunked   6 jev    0.47s 27940 tok
-256K-06 chunked   7 jev    0.48s 27890 tok
-256K-06 chunked   8 jev    0.45s 23328 tok
-256K-07 main        jev    0.87s {"detail":{"error_type":"max_tokens_exceeded"}}
-256K-07 main        subq   3.53s 237862 tok
-256K-07 chunked   0 jev    0.43s 27859 tok
+256K-05 chunked   5 jev    0.54s 27865 tok
+256K-05 chunked   6 jev    0.45s 27920 tok
+256K-05 chunked   7 jev    0.44s 28038 tok
+256K-05 chunked   8 jev    0.42s 23301 tok
+256K-06 main        jev    0.45s {"detail":{"error_type":"max_tokens_exceeded"}}
+256K-06 main        subq   2.79s 237731 tok
+256K-06 chunked   0 jev    0.45s 27790 tok
+256K-06 chunked   1 jev    0.46s 27983 tok
+256K-06 chunked   2 jev    0.44s 28002 tok
+256K-06 chunked   3 jev    0.72s 27923 tok
+256K-06 chunked   4 jev    0.43s 27947 tok
+256K-06 chunked   5 jev    0.45s 28018 tok
+256K-06 chunked   6 jev    0.43s 27940 tok
+256K-06 chunked   7 jev    0.44s 27890 tok
+256K-06 chunked   8 jev    0.42s 23328 tok
+256K-07 main        jev    0.62s {"detail":{"error_type":"max_tokens_exceeded"}}
+256K-07 main        subq   2.72s 237862 tok
+256K-07 chunked   0 jev    0.47s 27859 tok
 256K-07 chunked   1 jev    0.45s 28060 tok
-256K-07 chunked   2 jev    0.45s 27952 tok
-256K-07 chunked   3 jev    0.45s 27998 tok
-256K-07 chunked   4 jev    0.42s 27957 tok
-256K-07 chunked   5 jev    0.42s 27941 tok
-256K-07 chunked   6 jev    0.58s 27935 tok
-256K-07 chunked   7 jev    0.47s 27865 tok
-256K-07 chunked   8 jev    0.41s 23345 tok
-256K-08 main        jev    0.51s {"detail":{"error_type":"max_tokens_exceeded"}}
-256K-08 main        subq   3.67s 237955 tok
-256K-08 chunked   0 jev    0.45s 27771 tok
-256K-08 chunked   1 jev    0.43s 27913 tok
+256K-07 chunked   2 jev    0.44s 27952 tok
+256K-07 chunked   3 jev    0.43s 27998 tok
+256K-07 chunked   4 jev    0.47s 27957 tok
+256K-07 chunked   5 jev    0.43s 27941 tok
+256K-07 chunked   6 jev    0.43s 27935 tok
+256K-07 chunked   7 jev    0.45s 27865 tok
+256K-07 chunked   8 jev    0.40s 23345 tok
+256K-08 main        jev    0.49s {"detail":{"error_type":"max_tokens_exceeded"}}
+256K-08 main        subq   2.80s 237955 tok
+256K-08 chunked   0 jev    0.43s 27771 tok
+256K-08 chunked   1 jev    0.45s 27913 tok
 256K-08 chunked   2 jev    0.43s 27823 tok
 256K-08 chunked   3 jev    0.44s 27953 tok
-256K-08 chunked   4 jev    0.43s 27794 tok
-256K-08 chunked   5 jev    0.43s 27877 tok
+256K-08 chunked   4 jev    0.42s 27794 tok
+256K-08 chunked   5 jev    0.46s 27877 tok
 256K-08 chunked   6 jev    0.47s 27927 tok
-256K-08 chunked   7 jev    0.44s 27866 tok
-256K-08 chunked   8 jev    0.44s 23416 tok
-256K-09 main        jev    0.94s {"detail":{"error_type":"max_tokens_exceeded"}}
-256K-09 main        subq   3.54s 237903 tok
-256K-09 chunked   0 jev    0.43s 27885 tok
-256K-09 chunked   1 jev    0.48s 27968 tok
-256K-09 chunked   2 jev    0.44s 27868 tok
+256K-08 chunked   7 jev    0.43s 27866 tok
+256K-08 chunked   8 jev    0.41s 23416 tok
+256K-09 main        jev    0.52s {"detail":{"error_type":"max_tokens_exceeded"}}
+256K-09 main        subq   2.93s 237903 tok
+256K-09 chunked   0 jev    0.46s 27885 tok
+256K-09 chunked   1 jev    0.46s 27968 tok
+256K-09 chunked   2 jev    0.45s 27868 tok
 256K-09 chunked   3 jev    0.45s 27983 tok
-256K-09 chunked   4 jev    0.44s 27986 tok
-256K-09 chunked   5 jev    0.47s 27975 tok
-256K-09 chunked   6 jev    0.44s 27990 tok
+256K-09 chunked   4 jev    0.43s 27986 tok
+256K-09 chunked   5 jev    0.45s 27975 tok
+256K-09 chunked   6 jev    0.46s 27990 tok
 256K-09 chunked   7 jev    0.46s 27962 tok
-256K-09 chunked   8 jev    0.41s 23417 tok
+256K-09 chunked   8 jev    0.43s 23417 tok
+256K-10 main        jev    0.48s {"detail":{"error_type":"max_tokens_exceeded"}}
+256K-10 main        subq   3.03s 238403 tok
+256K-10 chunked   0 jev    0.42s 27840 tok
+256K-10 chunked   1 jev    0.44s 27842 tok
+256K-10 chunked   2 jev    0.46s 27926 tok
+256K-10 chunked   3 jev    0.44s 27932 tok
+256K-10 chunked   4 jev    0.45s 27913 tok
+256K-10 chunked   5 jev    0.49s 27917 tok
+256K-10 chunked   6 jev    0.44s 27940 tok
+256K-10 chunked   7 jev    0.45s 27922 tok
+256K-10 chunked   8 jev    0.38s 23481 tok
+256K-11 main        jev    0.37s {"detail":{"error_type":"max_tokens_exceeded"}}
+256K-11 main        subq   2.93s 238071 tok
+256K-11 chunked   0 jev    0.41s 27829 tok
+256K-11 chunked   1 jev    0.42s 27879 tok
+256K-11 chunked   2 jev    0.41s 27943 tok
+256K-11 chunked   3 jev    0.46s 27870 tok
+256K-11 chunked   4 jev    0.46s 27913 tok
+256K-11 chunked   5 jev    0.44s 27939 tok
+256K-11 chunked   6 jev    0.46s 27857 tok
+256K-11 chunked   7 jev    0.41s 27855 tok
+256K-11 chunked   8 jev    0.40s 23352 tok
+256K-12 main        jev    0.49s {"detail":{"error_type":"max_tokens_exceeded"}}
+256K-12 main        subq   3.03s 238321 tok
+256K-12 chunked   0 jev    0.46s 27850 tok
+256K-12 chunked   1 jev    0.46s 27940 tok
+256K-12 chunked   2 jev    0.49s 27903 tok
+256K-12 chunked   3 jev    0.44s 28020 tok
+256K-12 chunked   4 jev    0.43s 27957 tok
+256K-12 chunked   5 jev    0.44s 28018 tok
+256K-12 chunked   6 jev    0.44s 28044 tok
+256K-12 chunked   7 jev    0.44s 28094 tok
+256K-12 chunked   8 jev    0.39s 23494 tok
+256K-13 main        jev    0.44s {"detail":{"error_type":"max_tokens_exceeded"}}
+256K-13 main        subq   3.35s 237734 tok
+256K-13 chunked   0 jev    0.46s 27874 tok
+256K-13 chunked   1 jev    0.48s 27867 tok
+256K-13 chunked   2 jev    0.46s 27938 tok
+256K-13 chunked   3 jev    0.45s 28037 tok
+256K-13 chunked   4 jev    0.43s 27874 tok
+256K-13 chunked   5 jev    0.44s 27882 tok
+256K-13 chunked   6 jev    0.47s 27938 tok
+256K-13 chunked   7 jev    0.44s 27971 tok
+256K-13 chunked   8 jev    0.47s 23436 tok
+256K-14 main        jev    0.51s {"detail":{"error_type":"max_tokens_exceeded"}}
+256K-14 main        subq   2.84s 238098 tok
+256K-14 chunked   0 jev    0.45s 27681 tok
+256K-14 chunked   1 jev    0.53s 27907 tok
+256K-14 chunked   2 jev    0.45s 27908 tok
+256K-14 chunked   3 jev    0.44s 27916 tok
+256K-14 chunked   4 jev    0.46s 27940 tok
+256K-14 chunked   5 jev    0.48s 27818 tok
+256K-14 chunked   6 jev    0.45s 27902 tok
+256K-14 chunked   7 jev    0.43s 27870 tok
+256K-14 chunked   8 jev    0.39s 23403 tok
+256K-15 main        jev    0.55s {"detail":{"error_type":"max_tokens_exceeded"}}
+256K-15 main        subq   2.90s 238088 tok
+256K-15 chunked   0 jev    0.45s 27743 tok
+256K-15 chunked   1 jev    0.42s 27867 tok
+256K-15 chunked   2 jev    0.44s 27899 tok
+256K-15 chunked   3 jev    0.45s 27860 tok
+256K-15 chunked   4 jev    0.44s 27887 tok
+256K-15 chunked   5 jev    0.50s 27803 tok
+256K-15 chunked   6 jev    0.45s 27933 tok
+256K-15 chunked   7 jev    0.44s 27913 tok
+256K-15 chunked   8 jev    0.44s 23480 tok
+256K-16 main        jev    0.48s {"detail":{"error_type":"max_tokens_exceeded"}}
+256K-16 main        subq   2.87s 238847 tok
+256K-16 chunked   0 jev    0.46s 27914 tok
+256K-16 chunked   1 jev    0.43s 27877 tok
+256K-16 chunked   2 jev    0.43s 27911 tok
+256K-16 chunked   3 jev    0.45s 28047 tok
+256K-16 chunked   4 jev    0.44s 27991 tok
+256K-16 chunked   5 jev    0.44s 28011 tok
+256K-16 chunked   6 jev    0.43s 27911 tok
+256K-16 chunked   7 jev    0.43s 28019 tok
+256K-16 chunked   8 jev    0.44s 23343 tok
+256K-17 main        jev    0.55s {"detail":{"error_type":"max_tokens_exceeded"}}
+256K-17 main        subq   2.69s 238189 tok
+256K-17 chunked   0 jev    0.57s 27846 tok
+256K-17 chunked   1 jev    0.43s 27938 tok
+256K-17 chunked   2 jev    0.44s 27859 tok
+256K-17 chunked   3 jev    0.43s 27959 tok
+256K-17 chunked   4 jev    0.45s 27960 tok
+256K-17 chunked   5 jev    0.43s 27855 tok
+256K-17 chunked   6 jev    0.45s 27884 tok
+256K-17 chunked   7 jev    0.43s 27957 tok
+256K-17 chunked   8 jev    0.41s 23335 tok
+256K-18 main        jev    0.41s {"detail":{"error_type":"max_tokens_exceeded"}}
+256K-18 main        subq   2.67s 238899 tok
+256K-18 chunked   0 jev    0.51s 27782 tok
+256K-18 chunked   1 jev    0.45s 27918 tok
+256K-18 chunked   2 jev    0.44s 27924 tok
+256K-18 chunked   3 jev    0.53s 27932 tok
+256K-18 chunked   4 jev    0.46s 27995 tok
+256K-18 chunked   5 jev    0.45s 28063 tok
+256K-18 chunked   6 jev    0.44s 27952 tok
+256K-18 chunked   7 jev    0.45s 28027 tok
+256K-18 chunked   8 jev    0.47s 23511 tok
+256K-19 main        jev    0.38s {"detail":{"error_type":"max_tokens_exceeded"}}
+256K-19 main        subq   2.75s 238217 tok
+256K-19 chunked   0 jev    0.44s 27752 tok
+256K-19 chunked   1 jev    0.45s 27974 tok
+256K-19 chunked   2 jev    0.45s 27861 tok
+256K-19 chunked   3 jev    0.44s 27890 tok
+256K-19 chunked   4 jev    0.48s 27906 tok
+256K-19 chunked   5 jev    0.45s 27866 tok
+256K-19 chunked   6 jev    0.43s 27904 tok
+256K-19 chunked   7 jev    0.45s 27919 tok
+256K-19 chunked   8 jev    0.45s 23504 tok
 360K-00 main        jev    0.60s {"detail":{"error_type":"max_tokens_exceeded"}}
-360K-00 main        subq   4.66s 334851 tok
+360K-00 main        subq   3.77s 334851 tok
 360K-00 chunked   0 jev    0.45s 27845 tok
-360K-00 chunked   1 jev    0.46s 27902 tok
-360K-00 chunked   2 jev    0.44s 27962 tok
-360K-00 chunked   3 jev    0.42s 27900 tok
-360K-00 chunked   4 jev    0.43s 27799 tok
-360K-00 chunked   5 jev    0.45s 27947 tok
+360K-00 chunked   1 jev    0.43s 27902 tok
+360K-00 chunked   2 jev    0.43s 27962 tok
+360K-00 chunked   3 jev    0.46s 27900 tok
+360K-00 chunked   4 jev    0.49s 27799 tok
+360K-00 chunked   5 jev    0.49s 27947 tok
 360K-00 chunked   6 jev    0.46s 27858 tok
-360K-00 chunked   7 jev    0.45s 27944 tok
-360K-00 chunked   8 jev    0.44s 27831 tok
-360K-00 chunked   9 jev    0.47s 27963 tok
-360K-00 chunked  10 jev    0.44s 27897 tok
-360K-00 chunked  11 jev    0.42s 27904 tok
-360K-00 chunked  12 jev    0.35s 12272 tok
-360K-01 main        jev    0.47s {"detail":{"error_type":"max_tokens_exceeded"}}
-360K-01 main        subq   4.69s 335391 tok
+360K-00 chunked   7 jev    0.46s 27944 tok
+360K-00 chunked   8 jev    0.45s 27831 tok
+360K-00 chunked   9 jev    0.45s 27963 tok
+360K-00 chunked  10 jev    0.42s 27897 tok
+360K-00 chunked  11 jev    0.45s 27904 tok
+360K-00 chunked  12 jev    0.34s 12272 tok
+360K-01 main        jev    0.54s {"detail":{"error_type":"max_tokens_exceeded"}}
+360K-01 main        subq   3.92s 335391 tok
 360K-01 chunked   0 jev    0.43s 27786 tok
-360K-01 chunked   1 jev    0.43s 27891 tok
-360K-01 chunked   2 jev    0.47s 28054 tok
-360K-01 chunked   3 jev    0.45s 27968 tok
-360K-01 chunked   4 jev    0.44s 27964 tok
-360K-01 chunked   5 jev    0.43s 28065 tok
+360K-01 chunked   1 jev    0.47s 27891 tok
+360K-01 chunked   2 jev    0.45s 28054 tok
+360K-01 chunked   3 jev    0.44s 27968 tok
+360K-01 chunked   4 jev    0.45s 27964 tok
+360K-01 chunked   5 jev    0.45s 28065 tok
 360K-01 chunked   6 jev    0.46s 27987 tok
-360K-01 chunked   7 jev    0.44s 28004 tok
-360K-01 chunked   8 jev    0.43s 27962 tok
-360K-01 chunked   9 jev    0.42s 27930 tok
+360K-01 chunked   7 jev    0.49s 28004 tok
+360K-01 chunked   8 jev    0.45s 27962 tok
+360K-01 chunked   9 jev    0.43s 27930 tok
 360K-01 chunked  10 jev    0.47s 27907 tok
-360K-01 chunked  11 jev    0.43s 27859 tok
-360K-01 chunked  12 jev    0.32s 12237 tok
-360K-02 main        jev    0.58s {"detail":{"error_type":"max_tokens_exceeded"}}
-360K-02 main        subq   4.71s 334456 tok
+360K-01 chunked  11 jev    0.46s 27859 tok
+360K-01 chunked  12 jev    0.33s 12237 tok
+360K-02 main        jev    0.50s {"detail":{"error_type":"max_tokens_exceeded"}}
+360K-02 main        subq   3.63s 334456 tok
 360K-02 chunked   0 jev    0.44s 27948 tok
-360K-02 chunked   1 jev    0.43s 28042 tok
-360K-02 chunked   2 jev    0.46s 27951 tok
-360K-02 chunked   3 jev    0.43s 28016 tok
-360K-02 chunked   4 jev    0.46s 27848 tok
-360K-02 chunked   5 jev    0.46s 27891 tok
+360K-02 chunked   1 jev    0.45s 28042 tok
+360K-02 chunked   2 jev    0.43s 27951 tok
+360K-02 chunked   3 jev    0.54s 28016 tok
+360K-02 chunked   4 jev    0.50s 27848 tok
+360K-02 chunked   5 jev    0.42s 27891 tok
 360K-02 chunked   6 jev    0.43s 28025 tok
-360K-02 chunked   7 jev    0.45s 28006 tok
-360K-02 chunked   8 jev    0.44s 27919 tok
-360K-02 chunked   9 jev    0.42s 27948 tok
-360K-02 chunked  10 jev    0.43s 28028 tok
-360K-02 chunked  11 jev    0.46s 27923 tok
-360K-02 chunked  12 jev    0.33s 12180 tok
-360K-03 main        jev    0.52s {"detail":{"error_type":"max_tokens_exceeded"}}
-360K-03 main        subq   4.66s 335366 tok
-360K-03 chunked   0 jev    0.44s 27874 tok
-360K-03 chunked   1 jev    0.48s 27930 tok
-360K-03 chunked   2 jev    0.43s 27929 tok
+360K-02 chunked   7 jev    0.57s 28006 tok
+360K-02 chunked   8 jev    0.43s 27919 tok
+360K-02 chunked   9 jev    0.45s 27948 tok
+360K-02 chunked  10 jev    0.47s 28028 tok
+360K-02 chunked  11 jev    0.44s 27923 tok
+360K-02 chunked  12 jev    0.34s 12180 tok
+360K-03 main        jev    0.74s {"detail":{"error_type":"max_tokens_exceeded"}}
+360K-03 main        subq   3.61s 335366 tok
+360K-03 chunked   0 jev    0.46s 27874 tok
+360K-03 chunked   1 jev    0.42s 27930 tok
+360K-03 chunked   2 jev    0.45s 27929 tok
 360K-03 chunked   3 jev    0.45s 27907 tok
-360K-03 chunked   4 jev    0.44s 28002 tok
-360K-03 chunked   5 jev    0.47s 27966 tok
-360K-03 chunked   6 jev    0.44s 27958 tok
-360K-03 chunked   7 jev    0.47s 27963 tok
-360K-03 chunked   8 jev    0.44s 27877 tok
-360K-03 chunked   9 jev    0.42s 27946 tok
-360K-03 chunked  10 jev    0.46s 27987 tok
-360K-03 chunked  11 jev    0.41s 27896 tok
+360K-03 chunked   4 jev    0.46s 28002 tok
+360K-03 chunked   5 jev    0.45s 27966 tok
+360K-03 chunked   6 jev    0.46s 27958 tok
+360K-03 chunked   7 jev    0.45s 27963 tok
+360K-03 chunked   8 jev    0.46s 27877 tok
+360K-03 chunked   9 jev    0.46s 27946 tok
+360K-03 chunked  10 jev    0.50s 27987 tok
+360K-03 chunked  11 jev    0.45s 27896 tok
 360K-03 chunked  12 jev    0.34s 12353 tok
-360K-04 main        jev    0.40s {"detail":{"error_type":"max_tokens_exceeded"}}
-360K-04 main        subq   4.68s 334877 tok
+360K-04 main        jev    0.41s {"detail":{"error_type":"max_tokens_exceeded"}}
+360K-04 main        subq   3.88s 334877 tok
 360K-04 chunked   0 jev    0.45s 27824 tok
 360K-04 chunked   1 jev    0.44s 27913 tok
 360K-04 chunked   2 jev    0.43s 27923 tok
-360K-04 chunked   3 jev    0.45s 27887 tok
-360K-04 chunked   4 jev    0.43s 28072 tok
-360K-04 chunked   5 jev    0.44s 27869 tok
-360K-04 chunked   6 jev    0.43s 27993 tok
-360K-04 chunked   7 jev    0.42s 27873 tok
-360K-04 chunked   8 jev    0.44s 27934 tok
+360K-04 chunked   3 jev    0.42s 27887 tok
+360K-04 chunked   4 jev    0.45s 28072 tok
+360K-04 chunked   5 jev    0.47s 27869 tok
+360K-04 chunked   6 jev    0.47s 27993 tok
+360K-04 chunked   7 jev    0.45s 27873 tok
+360K-04 chunked   8 jev    0.43s 27934 tok
 360K-04 chunked   9 jev    0.46s 27873 tok
-360K-04 chunked  10 jev    0.45s 28022 tok
-360K-04 chunked  11 jev    0.42s 27918 tok
-360K-04 chunked  12 jev    0.33s 12185 tok
-360K-05 main        jev    0.46s {"detail":{"error_type":"max_tokens_exceeded"}}
-360K-05 main        subq   4.79s 334675 tok
-360K-05 chunked   0 jev    0.45s 27798 tok
-360K-05 chunked   1 jev    0.42s 27904 tok
-360K-05 chunked   2 jev    0.45s 27951 tok
+360K-04 chunked  10 jev    0.43s 28022 tok
+360K-04 chunked  11 jev    0.46s 27918 tok
+360K-04 chunked  12 jev    0.34s 12185 tok
+360K-05 main        jev    0.51s {"detail":{"error_type":"max_tokens_exceeded"}}
+360K-05 main        subq   3.67s 334675 tok
+360K-05 chunked   0 jev    0.42s 27798 tok
+360K-05 chunked   1 jev    0.46s 27904 tok
+360K-05 chunked   2 jev    0.43s 27951 tok
 360K-05 chunked   3 jev    0.45s 27941 tok
-360K-05 chunked   4 jev    0.43s 27929 tok
-360K-05 chunked   5 jev    0.42s 27899 tok
+360K-05 chunked   4 jev    0.45s 27929 tok
+360K-05 chunked   5 jev    0.43s 27899 tok
 360K-05 chunked   6 jev    0.44s 27883 tok
-360K-05 chunked   7 jev    0.44s 27921 tok
+360K-05 chunked   7 jev    0.45s 27921 tok
 360K-05 chunked   8 jev    0.45s 27808 tok
-360K-05 chunked   9 jev    0.43s 27867 tok
+360K-05 chunked   9 jev    0.45s 27867 tok
 360K-05 chunked  10 jev    0.45s 27945 tok
 360K-05 chunked  11 jev    0.45s 27885 tok
-360K-05 chunked  12 jev    0.33s 12233 tok
-360K-06 main        jev    0.59s {"detail":{"error_type":"max_tokens_exceeded"}}
-360K-06 main        subq   4.59s 334311 tok
+360K-05 chunked  12 jev    0.35s 12233 tok
+360K-06 main        jev    0.57s {"detail":{"error_type":"max_tokens_exceeded"}}
+360K-06 main        subq   3.68s 334311 tok
 360K-06 chunked   0 jev    0.46s 27813 tok
-360K-06 chunked   1 jev    0.43s 27821 tok
+360K-06 chunked   1 jev    0.44s 27821 tok
 360K-06 chunked   2 jev    0.45s 27937 tok
-360K-06 chunked   3 jev    0.45s 27913 tok
-360K-06 chunked   4 jev    0.44s 27842 tok
-360K-06 chunked   5 jev    0.43s 27863 tok
-360K-06 chunked   6 jev    0.46s 27937 tok
-360K-06 chunked   7 jev    0.45s 27916 tok
-360K-06 chunked   8 jev    0.44s 27963 tok
-360K-06 chunked   9 jev    0.45s 27896 tok
+360K-06 chunked   3 jev    0.44s 27913 tok
+360K-06 chunked   4 jev    0.43s 27842 tok
+360K-06 chunked   5 jev    0.45s 27863 tok
+360K-06 chunked   6 jev    0.42s 27937 tok
+360K-06 chunked   7 jev    0.44s 27916 tok
+360K-06 chunked   8 jev    0.45s 27963 tok
+360K-06 chunked   9 jev    0.44s 27896 tok
 360K-06 chunked  10 jev    0.43s 27793 tok
-360K-06 chunked  11 jev    0.43s 27915 tok
-360K-06 chunked  12 jev    0.34s 11976 tok
-360K-07 main        jev    0.61s {"detail":{"error_type":"max_tokens_exceeded"}}
-360K-07 main        subq   4.63s 334633 tok
-360K-07 chunked   0 jev    0.43s 27783 tok
-360K-07 chunked   1 jev    0.49s 27839 tok
-360K-07 chunked   2 jev    0.42s 27848 tok
-360K-07 chunked   3 jev    0.49s 27787 tok
-360K-07 chunked   4 jev    0.44s 28024 tok
-360K-07 chunked   5 jev    0.43s 27931 tok
-360K-07 chunked   6 jev    0.44s 27924 tok
-360K-07 chunked   7 jev    0.45s 27903 tok
-360K-07 chunked   8 jev    0.44s 27997 tok
+360K-06 chunked  11 jev    0.44s 27915 tok
+360K-06 chunked  12 jev    0.35s 11976 tok
+360K-07 main        jev    0.64s {"detail":{"error_type":"max_tokens_exceeded"}}
+360K-07 main        subq   3.93s 334633 tok
+360K-07 chunked   0 jev    0.46s 27783 tok
+360K-07 chunked   1 jev    0.54s 27839 tok
+360K-07 chunked   2 jev    0.45s 27848 tok
+360K-07 chunked   3 jev    0.43s 27787 tok
+360K-07 chunked   4 jev    0.45s 28024 tok
+360K-07 chunked   5 jev    0.45s 27931 tok
+360K-07 chunked   6 jev    0.59s 27924 tok
+360K-07 chunked   7 jev    0.43s 27903 tok
+360K-07 chunked   8 jev    0.43s 27997 tok
 360K-07 chunked   9 jev    0.46s 27919 tok
-360K-07 chunked  10 jev    0.47s 27942 tok
-360K-07 chunked  11 jev    0.44s 27887 tok
-360K-07 chunked  12 jev    0.34s 12233 tok
-360K-08 main        jev    0.62s {"detail":{"error_type":"max_tokens_exceeded"}}
-360K-08 main        subq   4.75s 335196 tok
-360K-08 chunked   0 jev    0.48s 27898 tok
-360K-08 chunked   1 jev    0.42s 27983 tok
-360K-08 chunked   2 jev    0.43s 27907 tok
-360K-08 chunked   3 jev    0.43s 27954 tok
-360K-08 chunked   4 jev    0.42s 27977 tok
-360K-08 chunked   5 jev    0.44s 27929 tok
-360K-08 chunked   6 jev    0.43s 27869 tok
-360K-08 chunked   7 jev    0.44s 27970 tok
-360K-08 chunked   8 jev    0.44s 27931 tok
-360K-08 chunked   9 jev    0.42s 27834 tok
+360K-07 chunked  10 jev    0.43s 27942 tok
+360K-07 chunked  11 jev    0.50s 27887 tok
+360K-07 chunked  12 jev    0.33s 12233 tok
+360K-08 main        jev    0.42s {"detail":{"error_type":"max_tokens_exceeded"}}
+360K-08 main        subq   3.87s 335196 tok
+360K-08 chunked   0 jev    0.45s 27898 tok
+360K-08 chunked   1 jev    0.55s 27983 tok
+360K-08 chunked   2 jev    0.46s 27907 tok
+360K-08 chunked   3 jev    0.46s 27954 tok
+360K-08 chunked   4 jev    0.43s 27977 tok
+360K-08 chunked   5 jev    0.45s 27929 tok
+360K-08 chunked   6 jev    0.45s 27869 tok
+360K-08 chunked   7 jev    0.52s 27970 tok
+360K-08 chunked   8 jev    0.43s 27931 tok
+360K-08 chunked   9 jev    0.45s 27834 tok
 360K-08 chunked  10 jev    0.45s 27954 tok
-360K-08 chunked  11 jev    0.43s 27934 tok
-360K-08 chunked  12 jev    0.31s 12257 tok
-360K-09 main        jev    0.58s {"detail":{"error_type":"max_tokens_exceeded"}}
-360K-09 main        subq   4.74s 334324 tok
+360K-08 chunked  11 jev    0.45s 27934 tok
+360K-08 chunked  12 jev    0.34s 12257 tok
+360K-09 main        jev    0.52s {"detail":{"error_type":"max_tokens_exceeded"}}
+360K-09 main        subq   3.55s 334324 tok
 360K-09 chunked   0 jev    0.45s 27603 tok
 360K-09 chunked   1 jev    0.45s 27934 tok
-360K-09 chunked   2 jev    0.44s 27891 tok
-360K-09 chunked   3 jev    0.42s 27929 tok
+360K-09 chunked   2 jev    0.49s 27891 tok
+360K-09 chunked   3 jev    0.45s 27929 tok
 360K-09 chunked   4 jev    0.43s 27968 tok
-360K-09 chunked   5 jev    0.43s 27785 tok
-360K-09 chunked   6 jev    0.44s 27809 tok
-360K-09 chunked   7 jev    0.43s 27753 tok
-360K-09 chunked   8 jev    0.43s 27980 tok
-360K-09 chunked   9 jev    0.43s 27880 tok
-360K-09 chunked  10 jev    0.43s 27928 tok
-360K-09 chunked  11 jev    0.47s 27790 tok
-360K-09 chunked  12 jev    0.33s 12400 tok
+360K-09 chunked   5 jev    0.46s 27785 tok
+360K-09 chunked   6 jev    0.49s 27809 tok
+360K-09 chunked   7 jev    0.45s 27753 tok
+360K-09 chunked   8 jev    0.47s 27980 tok
+360K-09 chunked   9 jev    0.44s 27880 tok
+360K-09 chunked  10 jev    0.44s 27928 tok
+360K-09 chunked  11 jev    0.44s 27790 tok
+360K-09 chunked  12 jev    0.34s 12400 tok
+360K-10 main        jev    0.45s {"detail":{"error_type":"max_tokens_exceeded"}}
+360K-10 main        subq   3.67s 334650 tok
+360K-10 chunked   0 jev    0.45s 27827 tok
+360K-10 chunked   1 jev    0.43s 28015 tok
+360K-10 chunked   2 jev    0.43s 28008 tok
+360K-10 chunked   3 jev    0.54s 27944 tok
+360K-10 chunked   4 jev    0.46s 27879 tok
+360K-10 chunked   5 jev    0.46s 27871 tok
+360K-10 chunked   6 jev    0.45s 27893 tok
+360K-10 chunked   7 jev    0.45s 27836 tok
+360K-10 chunked   8 jev    0.44s 27777 tok
+360K-10 chunked   9 jev    0.43s 27829 tok
+360K-10 chunked  10 jev    0.45s 27843 tok
+360K-10 chunked  11 jev    0.50s 27889 tok
+360K-10 chunked  12 jev    0.34s 12244 tok
+360K-11 main        jev    0.63s {"detail":{"error_type":"max_tokens_exceeded"}}
+360K-11 main        subq   3.98s 335641 tok
+360K-11 chunked   0 jev    0.46s 27763 tok
+360K-11 chunked   1 jev    0.46s 27965 tok
+360K-11 chunked   2 jev    0.44s 27961 tok
+360K-11 chunked   3 jev    0.44s 27956 tok
+360K-11 chunked   4 jev    0.49s 28030 tok
+360K-11 chunked   5 jev    0.43s 27977 tok
+360K-11 chunked   6 jev    0.47s 27876 tok
+360K-11 chunked   7 jev    0.46s 28112 tok
+360K-11 chunked   8 jev    0.47s 27975 tok
+360K-11 chunked   9 jev    0.44s 27915 tok
+360K-11 chunked  10 jev    0.46s 27993 tok
+360K-11 chunked  11 jev    0.46s 27979 tok
+360K-11 chunked  12 jev    0.31s 12311 tok
+360K-12 main        jev    0.45s {"detail":{"error_type":"max_tokens_exceeded"}}
+360K-12 main        subq   3.90s 335178 tok
+360K-12 chunked   0 jev    0.44s 27804 tok
+360K-12 chunked   1 jev    0.50s 28037 tok
+360K-12 chunked   2 jev    0.58s 27921 tok
+360K-12 chunked   3 jev    0.46s 27871 tok
+360K-12 chunked   4 jev    0.46s 27922 tok
+360K-12 chunked   5 jev    0.45s 27864 tok
+360K-12 chunked   6 jev    0.47s 27879 tok
+360K-12 chunked   7 jev    0.48s 27928 tok
+360K-12 chunked   8 jev    0.44s 27951 tok
+360K-12 chunked   9 jev    0.45s 28095 tok
+360K-12 chunked  10 jev    0.47s 27897 tok
+360K-12 chunked  11 jev    0.48s 27929 tok
+360K-12 chunked  12 jev    0.32s 12230 tok
+360K-13 main        jev    0.62s {"detail":{"error_type":"max_tokens_exceeded"}}
+360K-13 main        subq   3.78s 334159 tok
+360K-13 chunked   0 jev    0.45s 27733 tok
+360K-13 chunked   1 jev    0.42s 27959 tok
+360K-13 chunked   2 jev    0.50s 28053 tok
+360K-13 chunked   3 jev    0.45s 27991 tok
+360K-13 chunked   4 jev    0.44s 27905 tok
+360K-13 chunked   5 jev    0.51s 27988 tok
+360K-13 chunked   6 jev    0.51s 27869 tok
+360K-13 chunked   7 jev    0.45s 27982 tok
+360K-13 chunked   8 jev    0.46s 27934 tok
+360K-13 chunked   9 jev    0.43s 27926 tok
+360K-13 chunked  10 jev    0.44s 27961 tok
+360K-13 chunked  11 jev    0.44s 28012 tok
+360K-13 chunked  12 jev    0.32s 12231 tok
+360K-14 main        jev    0.53s {"detail":{"error_type":"max_tokens_exceeded"}}
+360K-14 main        subq   3.79s 335032 tok
+360K-14 chunked   0 jev    0.50s 27784 tok
+360K-14 chunked   1 jev    0.43s 27914 tok
+360K-14 chunked   2 jev    0.45s 27937 tok
+360K-14 chunked   3 jev    0.43s 27899 tok
+360K-14 chunked   4 jev    0.45s 27975 tok
+360K-14 chunked   5 jev    0.47s 27925 tok
+360K-14 chunked   6 jev    0.45s 27885 tok
+360K-14 chunked   7 jev    0.48s 27935 tok
+360K-14 chunked   8 jev    0.44s 27856 tok
+360K-14 chunked   9 jev    0.44s 27946 tok
+360K-14 chunked  10 jev    0.46s 27926 tok
+360K-14 chunked  11 jev    0.47s 27873 tok
+360K-14 chunked  12 jev    0.33s 12271 tok
+360K-15 main        jev    0.76s {"detail":{"error_type":"max_tokens_exceeded"}}
+360K-15 main        subq   3.64s 334544 tok
+360K-15 chunked   0 jev    0.45s 27760 tok
+360K-15 chunked   1 jev    0.47s 27936 tok
+360K-15 chunked   2 jev    0.43s 27935 tok
+360K-15 chunked   3 jev    0.42s 27941 tok
+360K-15 chunked   4 jev    0.50s 27916 tok
+360K-15 chunked   5 jev    0.47s 27907 tok
+360K-15 chunked   6 jev    0.43s 27883 tok
+360K-15 chunked   7 jev    0.44s 27890 tok
+360K-15 chunked   8 jev    0.45s 27860 tok
+360K-15 chunked   9 jev    0.46s 27893 tok
+360K-15 chunked  10 jev    0.45s 27894 tok
+360K-15 chunked  11 jev    0.49s 27923 tok
+360K-15 chunked  12 jev    0.34s 12138 tok
+360K-16 main        jev    0.64s {"detail":{"error_type":"max_tokens_exceeded"}}
+360K-16 main        subq   3.86s 334414 tok
+360K-16 chunked   0 jev    0.43s 27755 tok
+360K-16 chunked   1 jev    0.43s 27863 tok
+360K-16 chunked   2 jev    0.43s 27927 tok
+360K-16 chunked   3 jev    0.44s 27927 tok
+360K-16 chunked   4 jev    0.46s 27790 tok
+360K-16 chunked   5 jev    0.46s 27946 tok
+360K-16 chunked   6 jev    0.46s 27910 tok
+360K-16 chunked   7 jev    0.48s 27855 tok
+360K-16 chunked   8 jev    0.55s 27936 tok
+360K-16 chunked   9 jev    0.44s 27927 tok
+360K-16 chunked  10 jev    0.45s 27773 tok
+360K-16 chunked  11 jev    0.46s 27976 tok
+360K-16 chunked  12 jev    0.33s 12249 tok
+360K-17 main        jev    0.43s {"detail":{"error_type":"max_tokens_exceeded"}}
+360K-17 main        subq   3.78s 334616 tok
+360K-17 chunked   0 jev    0.46s 27794 tok
+360K-17 chunked   1 jev    0.50s 27979 tok
+360K-17 chunked   2 jev    0.51s 27875 tok
+360K-17 chunked   3 jev    0.51s 27927 tok
+360K-17 chunked   4 jev    0.42s 28026 tok
+360K-17 chunked   5 jev    0.44s 27851 tok
+360K-17 chunked   6 jev    0.46s 27930 tok
+360K-17 chunked   7 jev    0.44s 27934 tok
+360K-17 chunked   8 jev    0.45s 27886 tok
+360K-17 chunked   9 jev    0.43s 27864 tok
+360K-17 chunked  10 jev    0.53s 27828 tok
+360K-17 chunked  11 jev    0.51s 27850 tok
+360K-17 chunked  12 jev    0.33s 12269 tok
+360K-18 main        jev    0.48s {"detail":{"error_type":"max_tokens_exceeded"}}
+360K-18 main        subq   3.80s 334420 tok
+360K-18 chunked   0 jev    0.46s 27822 tok
+360K-18 chunked   1 jev    0.48s 27937 tok
+360K-18 chunked   2 jev    0.41s 27874 tok
+360K-18 chunked   3 jev    0.50s 27890 tok
+360K-18 chunked   4 jev    0.47s 27897 tok
+360K-18 chunked   5 jev    0.46s 27890 tok
+360K-18 chunked   6 jev    0.45s 27822 tok
+360K-18 chunked   7 jev    0.45s 27928 tok
+360K-18 chunked   8 jev    0.43s 27802 tok
+360K-18 chunked   9 jev    0.45s 27806 tok
+360K-18 chunked  10 jev    0.42s 27915 tok
+360K-18 chunked  11 jev    0.44s 27957 tok
+360K-18 chunked  12 jev    0.32s 12130 tok
+360K-19 main        jev    0.45s {"detail":{"error_type":"max_tokens_exceeded"}}
+360K-19 main        subq   3.97s 335216 tok
+360K-19 chunked   0 jev    0.46s 27861 tok
+360K-19 chunked   1 jev    0.43s 27881 tok
+360K-19 chunked   2 jev    0.46s 28008 tok
+360K-19 chunked   3 jev    0.44s 27983 tok
+360K-19 chunked   4 jev    0.45s 28018 tok
+360K-19 chunked   5 jev    0.43s 27947 tok
+360K-19 chunked   6 jev    0.46s 27905 tok
+360K-19 chunked   7 jev    0.45s 27848 tok
+360K-19 chunked   8 jev    0.44s 27938 tok
+360K-19 chunked   9 jev    0.44s 27944 tok
+360K-19 chunked  10 jev    0.45s 27935 tok
+360K-19 chunked  11 jev    0.47s 27940 tok
+360K-19 chunked  12 jev    0.32s 12287 tok
+008K-00 robust    0 subq   0.77s 8284 tok
+008K-00 robust    0 jev    0.35s 8577 tok
+008K-00 robust    1 jev    0.35s 8154 tok
+008K-00 robust    1 subq   0.64s 8218 tok
+008K-00 robust    2 subq   0.65s 8236 tok
+008K-00 robust    2 jev    0.31s 8170 tok
+008K-01 robust    0 subq   0.76s 8176 tok
+008K-01 robust    0 jev    0.30s 8456 tok
+008K-01 robust    1 jev    0.33s 8033 tok
+008K-01 robust    1 subq   0.73s 8110 tok
+008K-01 robust    2 subq   0.65s 8128 tok
+008K-01 robust    2 jev    0.29s 8049 tok
+008K-02 robust    0 subq   0.64s 8187 tok
+008K-02 robust    0 jev    0.35s 8455 tok
+008K-02 robust    1 jev    0.29s 8032 tok
+008K-02 robust    1 subq   0.61s 8121 tok
+008K-02 robust    2 subq   0.63s 8139 tok
+008K-02 robust    2 jev    0.30s 8048 tok
+008K-03 robust    0 subq   0.65s 8142 tok
+008K-03 robust    0 jev    0.34s 8435 tok
+008K-03 robust    1 jev    0.31s 8012 tok
+008K-03 robust    1 subq   0.64s 8076 tok
+008K-03 robust    2 subq   0.63s 8094 tok
+008K-03 robust    2 jev    0.29s 8028 tok
+008K-04 robust    0 subq   0.67s 8326 tok
+008K-04 robust    0 jev    0.30s 8591 tok
+008K-04 robust    1 jev    0.29s 8168 tok
+008K-04 robust    1 subq   0.66s 8260 tok
+008K-04 robust    2 subq   0.82s 8278 tok
+008K-04 robust    2 jev    0.29s 8184 tok
+008K-05 robust    0 subq   0.64s 8152 tok
+008K-05 robust    0 jev    0.34s 8469 tok
+008K-05 robust    1 jev    0.32s 8046 tok
+008K-05 robust    1 subq   0.65s 8086 tok
+008K-05 robust    2 subq   0.64s 8104 tok
+008K-05 robust    2 jev    0.39s 8062 tok
+008K-06 robust    0 subq   0.65s 8187 tok
+008K-06 robust    0 jev    0.34s 8452 tok
+008K-06 robust    1 jev    0.33s 8029 tok
+008K-06 robust    1 subq   0.63s 8121 tok
+008K-06 robust    2 subq   0.66s 8139 tok
+008K-06 robust    2 jev    0.30s 8045 tok
+008K-07 robust    0 subq   0.65s 8099 tok
+008K-07 robust    0 jev    0.35s 8374 tok
+008K-07 robust    1 jev    0.34s 7951 tok
+008K-07 robust    1 subq   0.69s 8033 tok
+008K-07 robust    2 subq   0.65s 8051 tok
+008K-07 robust    2 jev    0.34s 7967 tok
+008K-08 robust    0 subq   0.63s 8166 tok
+008K-08 robust    0 jev    0.33s 8435 tok
+008K-08 robust    1 jev    0.31s 8012 tok
+008K-08 robust    1 subq   0.64s 8100 tok
+008K-08 robust    2 subq   0.66s 8118 tok
+008K-08 robust    2 jev    0.30s 8028 tok
+008K-09 robust    0 subq   0.59s 8085 tok
+008K-09 robust    0 jev    0.30s 8378 tok
+008K-09 robust    1 jev    0.32s 7955 tok
+008K-09 robust    1 subq   0.60s 8019 tok
+008K-09 robust    2 subq   0.60s 8037 tok
+008K-09 robust    2 jev    0.34s 7971 tok
+008K-10 robust    0 subq   0.65s 8309 tok
+008K-10 robust    0 jev    0.34s 8574 tok
+008K-10 robust    1 jev    0.32s 8151 tok
+008K-10 robust    1 subq   0.69s 8243 tok
+008K-10 robust    2 subq   0.73s 8261 tok
+008K-10 robust    2 jev    0.33s 8167 tok
+008K-11 robust    0 subq   0.69s 8198 tok
+008K-11 robust    0 jev    0.35s 8498 tok
+008K-11 robust    1 jev    0.29s 8075 tok
+008K-11 robust    1 subq   0.61s 8132 tok
+008K-11 robust    2 subq   0.63s 8150 tok
+008K-11 robust    2 jev    0.32s 8091 tok
+008K-12 robust    0 subq   0.67s 8243 tok
+008K-12 robust    0 jev    0.34s 8518 tok
+008K-12 robust    1 jev    0.31s 8095 tok
+008K-12 robust    1 subq   0.62s 8177 tok
+008K-12 robust    2 subq   0.62s 8195 tok
+008K-12 robust    2 jev    0.34s 8111 tok
+008K-13 robust    0 subq   0.64s 8211 tok
+008K-13 robust    0 jev    0.33s 8477 tok
+008K-13 robust    1 jev    0.29s 8054 tok
+008K-13 robust    1 subq   0.63s 8145 tok
+008K-13 robust    2 subq   0.62s 8163 tok
+008K-13 robust    2 jev    0.35s 8070 tok
+008K-14 robust    0 subq   0.64s 8265 tok
+008K-14 robust    0 jev    0.32s 8553 tok
+008K-14 robust    1 jev    0.28s 8130 tok
+008K-14 robust    1 subq   0.64s 8199 tok
+008K-14 robust    2 subq   0.64s 8217 tok
+008K-14 robust    2 jev    0.32s 8146 tok
+008K-15 robust    0 subq   0.62s 8165 tok
+008K-15 robust    0 jev    0.31s 8452 tok
+008K-15 robust    1 jev    0.30s 8029 tok
+008K-15 robust    1 subq   0.62s 8099 tok
+008K-15 robust    2 subq   0.69s 8117 tok
+008K-15 robust    2 jev    0.29s 8045 tok
+008K-16 robust    0 subq   0.64s 8126 tok
+008K-16 robust    0 jev    0.32s 8404 tok
+008K-16 robust    1 jev    0.33s 7981 tok
+008K-16 robust    1 subq   0.64s 8060 tok
+008K-16 robust    2 subq   0.65s 8078 tok
+008K-16 robust    2 jev    0.30s 7997 tok
+008K-17 robust    0 subq   0.66s 8224 tok
+008K-17 robust    0 jev    0.32s 8516 tok
+008K-17 robust    1 jev    0.31s 8093 tok
+008K-17 robust    1 subq   0.66s 8158 tok
+008K-17 robust    2 subq   0.63s 8176 tok
+008K-17 robust    2 jev    0.45s 8109 tok
+008K-18 robust    0 subq   0.68s 8151 tok
+008K-18 robust    0 jev    0.31s 8414 tok
+008K-18 robust    1 jev    0.53s 7991 tok
+008K-18 robust    1 subq   0.68s 8085 tok
+008K-18 robust    2 subq   0.63s 8103 tok
+008K-18 robust    2 jev    0.29s 8007 tok
+008K-19 robust    0 subq   0.67s 8176 tok
+008K-19 robust    0 jev    0.31s 8479 tok
+008K-19 robust    1 jev    0.30s 8056 tok
+008K-19 robust    1 subq   0.63s 8110 tok
+008K-19 robust    2 subq   0.62s 8128 tok
+008K-19 robust    2 jev    0.31s 8072 tok

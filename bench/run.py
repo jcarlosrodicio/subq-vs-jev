@@ -34,7 +34,11 @@ def tasks(case):
         for i, part in enumerate(chunks(case["state"])):
             yield "chunked", i, part, case["questions"]
     if case["length"] == g.ROBUSTNESS_LENGTH:
-        yield "robust", None, case["state"], g.robustness(case)[0]
+        # SubQ caps a request at 16 questions (since 2026-10-13), so the 36 robustness questions go in
+        # three calls of 12 to both models.
+        items = list(g.robustness(case)[0].items())
+        for k in range(0, len(items), 12):
+            yield "robust", k // 12, case["state"], dict(items[k:k + 12])
         for k in (1, 2):
             yield f"repeat{k}", None, case["state"], case["questions"]
 

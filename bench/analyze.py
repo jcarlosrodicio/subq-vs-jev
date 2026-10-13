@@ -13,7 +13,7 @@ import generate as g
 
 ROOT = Path(__file__).resolve().parents[1]
 
-PRICE_PER_M_INPUT = {"jev": 0.042, "subq": 0.09}  # USD, public list prices; neither charges output in our usage
+PRICE_PER_M_INPUT = {"jev": 0.042, "subq": 0.05}  # USD per 1M input tokens, public list prices on 2026-10-13
 FAMILIES = ["L1", "L2", "X1", "X2", "A1", "A2"]
 
 
@@ -82,7 +82,7 @@ def main():
             chunked[r["case"]].append(r)
             continue
         if r["task"] == "robust":
-            robust[(r["case"], r["model"])] = r["answers"]
+            robust.setdefault((r["case"], r["model"]), {}).update(r["answers"])
             continue
         if r["task"].startswith("repeat"):
             repeats[(r["case"], r["model"])][r["task"]] = r["answers"]
@@ -115,7 +115,7 @@ def main():
     def acc_block(items):
         k, n = sum(i["correct"] for i in items), len(items)
         lo, hi = wilson(k, n)
-        return {"n": n, "correct": k, "acc": round(k / n, 4) if n else None, "ci": [lo, hi]}
+        return {"n": n, "correct": k, "acc": round(k / n, 6) if n else None, "ci": [lo, hi]}
 
     by_length = []
     for s in series:

@@ -93,3 +93,11 @@ Con registros de 8K (entran los dos modelos), los mismos 10 registros:
 - **Calibración de tokens:** los registros ocupan unos 1.72 caracteres por token, no 2.9. Con la estimación inicial, el registro de "30K" medía 48K y Jev lo rechazaba; el de "360K" medía unos 610K y SubQ respondía `internal_error` en lugar de un error de límite. Se fija `CHARS_PER_TOKEN = 1.70`; ahora "30K" son 28.8K tokens y "360K" son 335K.
 - **Motivos de devolución sin espacios** (`wrong-size`), porque rompían el formato `clave=valor`. Lo detectó la prueba de verdad.
 - **Dificultad:** hasta 16K los dos modelos aciertan casi todo. No se endurece la prueba después de ver los resultados, para no ajustarla a favor o en contra de ninguno. Las diferencias aparecen al crecer el contexto.
+
+## Segunda ejecución (2026-10-13), tras el anuncio de SubQ
+
+- **20 registros por tamaño** en lugar de 10, para que la métrica de automatización con un 5 % de error sea menos ruidosa. Los registros 0-9 son idénticos a los de la primera ejecución.
+- **SubQ admite como mucho 16 preguntas por petición** (el 10 de octubre aceptaba 36). Las 36 preguntas de robustez se envían en tres llamadas de 12 a los dos modelos. Las 40 llamadas rechazadas con el formato antiguo están en `results/raw/robust-36-questions-rejected.jsonl`.
+- **Precio de SubQ:** 0.05 $ por millón de tokens de entrada (antes 0.09 $).
+- La ejecución del 10 de octubre se conserva en `results/run-2026-10-10/`. Con las mismas peticiones, SubQ dio respuestas distintas (solo el 11 % idénticas byte a byte) y bajó su acierto hasta 30K del 96.7 % al 94.4 %. Jev no cambió.
+- El ejecutor guarda por cada intento un `X-Request-ID` propio, la hora exacta de envío y los identificadores del servidor.

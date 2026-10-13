@@ -1,22 +1,24 @@
 # SubQ Snap vs Jev
 
-A reproducible test of two decision models, [SubQ Snap](https://docs.subq.ai/) and [Jev](https://docs.typesafe.ai/), on the same 1,920 questions about a fictional store's event log, from 2K to 360K tokens of context.
+A reproducible test of two decision models, [SubQ Snap](https://docs.subq.ai/) and [Jev](https://docs.typesafe.ai/), on the same 3,840 questions about a fictional store's event log, from 2K to 360K tokens of context.
 
 **Results page:** https://jcarlosrodicio.github.io/subq-vs-jev/ (English and Spanish)
 
-## What it found (run on 10 October 2026)
+## What it found (run on 13 October 2026)
 
 | | SubQ Snap | Jev |
 |---|---|---|
-| Accuracy, logs up to 30K tokens | 96.7% | 94.8% |
-| Accuracy, 360K-token logs | 57.5% | 76.7% (reading 29K chunks) |
-| Calibration error up to 30K (ECE) | 0.030 | 0.038 |
-| Calibration error, 64K and up | 0.178 | 0.110 (chunked) |
-| Byte-identical output on repeat | 100% | 50% (97.5% same answer) |
-| Answers changed by shuffling options | 0 of 40 | 3 of 40 |
-| Median latency, 8K tokens | 1.00 s | 0.30 s |
+| Accuracy, logs up to 30K tokens | 93.9% | 94.7% |
+| Accuracy, 360K-token logs | 58.8% | 77.1% (reading 29K chunks) |
+| Calibration error up to 30K (ECE) | 0.028 | 0.038 |
+| Calibration error, 64K and up | 0.163 | 0.117 (chunked) |
+| Byte-identical output on repeat | 90.0% | 50.8% |
+| Answers changed by shuffling options | 3 of 80 | 5 of 80 |
+| Median latency, 8K tokens | 0.75 s | 0.31 s |
 
-Jev rejects requests above about 32.7K tokens (`max_tokens_exceeded`), so on longer logs it also gets the log split into 29K pieces and its answers are combined. SubQ reads every log in one call.
+Jev rejects requests above about 32.7K tokens (`max_tokens_exceeded`), so on longer logs it also gets the log split into 29K pieces and its answers are combined. SubQ reads every log in one call, and since 13 October accepts at most 16 questions per request, so the robustness questions are sent in three calls of 12 to both models.
+
+A first run on 10 October, during SubQ's private beta (10 logs per size), is kept in `results/run-2026-10-10`. SubQ kept the same model name between runs but changed: on the very same requests only 11% of its answers were byte-identical, its accuracy up to 30K went from 96.7% to 94.4%, and its median time at 8K went from 1.00 s to 0.75 s. Jev did not change.
 
 ## How it works
 
@@ -42,8 +44,8 @@ Python 3.10+ with the standard library only. On macOS with the python.org build,
 
 - SubQ Snap is a preview. Both models may have changed since the run.
 - Latency was measured from Spain over a home connection and includes the network.
-- Jev reports output tokens; its output price wasn't published, so cost figures use input tokens only. SubQ doesn't charge for output.
-- 10 logs per size, 20 questions per kind and size. The page shows 95% intervals.
+- Jev reports output tokens; its output price wasn't published, so cost figures use input tokens only (Jev $0.042, SubQ $0.05 per 1M on 13 October). SubQ doesn't charge for output.
+- 20 logs per size, 40 questions per kind and size. The page shows 95% intervals.
 
 ## Disclosure
 

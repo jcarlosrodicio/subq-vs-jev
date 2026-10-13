@@ -89,6 +89,9 @@
       autojmin: pct(Math.min(...LENS.filter((l) => l > 30000).map((l) => autoAt("jev_chunked", l))), 0),
       autojmax: pct(Math.max(...LENS.filter((l) => l > 30000).map((l) => autoAt("jev_chunked", l))), 0),
       jevident: pct(rb.jev.repeat_identical_rate, 0),
+      subqident: pct(rb.subq.repeat_identical_rate, 0),
+      subqshuffle: Math.round(rb.subq.option_shuffle_flip_rate * rb.subq.option_shuffle_n),
+      speedup: num(lat("subq", 8000).p50 / lat("jev", 8000).p50, 1),
     };
   }
 
